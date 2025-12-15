@@ -1,0 +1,228 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-Commerce Platform",
+      "client": "TechStart Retail",
+      "category": "Web Development",
+      "description": "A full-featured e-commerce platform with custom shopping cart, payment integration, and admin dashboard. Built for scalability and performance.",
+      "image": "/portfolio/ecommerce.jpg",
+      "technologies": ["Next.js", "React", "Node.js", "MongoDB", "Stripe"],
+      "results": {
+        "metric1": "300%",
+        "metric1Label": "Sales Increase",
+        "metric2": "2.1s",
+        "metric2Label": "Load Time"
+      },
+      "features": [
+        "Custom shopping cart",
+        "Payment gateway integration",
+        "Admin dashboard",
+        "Inventory management",
+        "Order tracking system"
+      ],
+      "year": "2024",
+      "status": "Live"
+    },
+    {
+      "id": 2,
+      "title": "Corporate Website Redesign",
+      "client": "Global Finance Corp",
+      "category": "Web Development",
+      "description": "Complete redesign of corporate website with modern UI/UX, improved performance, and enhanced user experience. Resulted in significant increase in lead generation.",
+      "image": "/portfolio/corporate.jpg",
+      "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      "results": {
+        "metric1": "250%",
+        "metric1Label": "Lead Increase",
+        "metric2": "45%",
+        "metric2Label": "Bounce Rate Reduction"
+      },
+      "features": [
+        "Responsive design",
+        "SEO optimization",
+        "Fast loading times",
+        "Modern UI/UX",
+        "CMS integration"
+      ],
+      "year": "2024",
+      "status": "Live"
+    },
+    {
+      "id": 3,
+      "title": "Social Media Marketing Campaign",
+      "client": "Fitness Brand Co",
+      "category": "Digital Marketing",
+      "description": "Comprehensive social media marketing campaign across Facebook and Instagram. Focused on lead generation and brand awareness with measurable ROI.",
+      "image": "/portfolio/marketing.jpg",
+      "technologies": ["Facebook Ads", "Instagram Ads", "Google Analytics", "Pixel Tracking"],
+      "results": {
+        "metric1": "500%",
+        "metric1Label": "ROI Increase",
+        "metric2": "10K+",
+        "metric2Label": "Leads Generated"
+      },
+      "features": [
+        "Multi-platform campaigns",
+        "A/B testing",
+        "Conversion tracking",
+        "Audience targeting",
+        "Performance analytics"
+      ],
+      "year": "2024",
+      "status": "Completed"
+    },
+    {
+      "id": 4,
+      "title": "Brand Identity & Logo Design",
+      "client": "GreenTech Solutions",
+      "category": "Branding & Design",
+      "description": "Complete brand identity design including logo, color palette, typography, and brand guidelines. Created a cohesive visual identity across all touchpoints.",
+      "image": "/portfolio/branding.jpg",
+      "technologies": ["Adobe Illustrator", "Figma", "Brand Guidelines"],
+      "results": {
+        "metric1": "85%",
+        "metric1Label": "Brand Recognition",
+        "metric2": "100+",
+        "metric2Label": "Assets Created"
+      },
+      "features": [
+        "Logo design",
+        "Color palette",
+        "Typography system",
+        "Brand guidelines",
+        "Social media templates"
+      ],
+      "year": "2024",
+      "status": "Completed"
+    },
+    {
+      "id": 5,
+      "title": "SaaS Dashboard Application",
+      "client": "CloudManage Pro",
+      "category": "Web Development",
+      "description": "Custom SaaS dashboard with real-time analytics, user management, and reporting features. Built with scalability and user experience in mind.",
+      "image": "/portfolio/saas.jpg",
+      "technologies": ["React", "Node.js", "PostgreSQL", "Chart.js", "Stripe"],
+      "results": {
+        "metric1": "200%",
+        "metric1Label": "User Engagement",
+        "metric2": "99.9%",
+        "metric2Label": "Uptime"
+      },
+      "features": [
+        "Real-time analytics",
+        "User management",
+        "Custom reporting",
+        "Subscription management",
+        "API integration"
+      ],
+      "year": "2023",
+      "status": "Live"
+    },
+    {
+      "id": 6,
+      "title": "Video Marketing Campaign",
+      "client": "Startup Accelerator",
+      "category": "Video Editing",
+      "description": "Created engaging promotional videos and social media reels for product launch. Videos generated high engagement and increased brand visibility.",
+      "image": "/portfolio/video.jpg",
+      "technologies": ["Adobe Premiere", "After Effects", "Motion Graphics"],
+      "results": {
+        "metric1": "1M+",
+        "metric1Label": "Total Views",
+        "metric2": "50K+",
+        "metric2Label": "Engagements"
+      },
+      "features": [
+        "Promotional videos",
+        "Social media reels",
+        "Motion graphics",
+        "Color grading",
+        "Sound design"
+      ],
+      "year": "2024",
+      "status": "Completed"
+    },
+    {
+      "id": 7,
+      "title": "Google Ads Campaign",
+      "client": "Local Restaurant Chain",
+      "category": "Digital Marketing",
+      "description": "Strategic Google Ads campaign targeting local customers. Optimized for conversions with focus on foot traffic and online orders.",
+      "image": "/portfolio/google-ads.jpg",
+      "technologies": ["Google Ads", "Google Analytics", "Conversion Tracking"],
+      "results": {
+        "metric1": "400%",
+        "metric1Label": "ROI Increase",
+        "metric2": "5K+",
+        "metric2Label": "Conversions"
+      },
+      "features": [
+        "Local targeting",
+        "Keyword optimization",
+        "Conversion tracking",
+        "Landing page optimization",
+        "Performance reporting"
+      ],
+      "year": "2024",
+      "status": "Ongoing"
+    },
+    {
+      "id": 8,
+      "title": "WordPress E-Commerce Site",
+      "client": "Artisan Crafts Store",
+      "category": "Web Development",
+      "description": "Custom WordPress e-commerce site with WooCommerce integration. Designed for easy product management and seamless shopping experience.",
+      "image": "/portfolio/wordpress.jpg",
+      "technologies": ["WordPress", "WooCommerce", "PHP", "Custom Theme"],
+      "results": {
+        "metric1": "180%",
+        "metric1Label": "Sales Increase",
+        "metric2": "3.5s",
+        "metric2Label": "Load Time"
+      },
+      "features": [
+        "WooCommerce integration",
+        "Custom theme design",
+        "Product catalog",
+        "Payment integration",
+        "SEO optimization"
+      ],
+      "year": "2023",
+      "status": "Live"
+    },
+    {
+      "id": 9,
+      "title": "Complete Brand Refresh",
+      "client": "Tech Innovation Hub",
+      "category": "Branding & Design",
+      "description": "Complete brand refresh including new logo, website design, and marketing materials. Modernized brand identity to appeal to tech-savvy audience.",
+      "image": "/portfolio/brand-refresh.jpg",
+      "technologies": ["Figma", "Adobe Creative Suite", "Brand Strategy"],
+      "results": {
+        "metric1": "70%",
+        "metric1Label": "Brand Perception",
+        "metric2": "150+",
+        "metric2Label": "Design Assets"
+      },
+      "features": [
+        "Logo redesign",
+        "Visual identity",
+        "Website redesign",
+        "Marketing materials",
+        "Brand guidelines"
+      ],
+      "year": "2024",
+      "status": "Completed"
+    }
+  ],
+  "categories": [
+    "All",
+    "Web Development",
+    "Digital Marketing",
+    "Branding & Design",
+    "Video Editing"
+  ]
+}
+

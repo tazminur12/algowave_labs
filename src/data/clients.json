@@ -1,0 +1,53 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "name": "House of Sea Moss",
+      "logo": "/clients/house-of-sea-moss.png",
+      "website": "https://houseofseamoss.com"
+    },
+    {
+      "id": 2,
+      "name": "Trinity8 Solutions",
+      "logo": "/clients/trinity8-solutions.png",
+      "website": "https://trinity8solutions.com"
+    },
+    {
+      "id": 3,
+      "name": "Deloit",
+      "logo": "/clients/deloit.png",
+      "website": "https://deloit.com"
+    },
+    {
+      "id": 4,
+      "name": "JOYO BAREFOOT",
+      "logo": "/clients/joyo-barefoot.png",
+      "website": "https://joyobarefoot.com"
+    },
+    {
+      "id": 5,
+      "name": "C12s",
+      "logo": "/clients/c12s.png",
+      "website": "https://c12s.com"
+    },
+    {
+      "id": 6,
+      "name": "Technology Solutions",
+      "logo": "/clients/technology-solutions.png",
+      "website": "https://technologysolutions.com"
+    },
+    {
+      "id": 7,
+      "name": "Digital Innovations",
+      "logo": "/clients/digital-innovations.png",
+      "website": "https://digitalinnovations.com"
+    },
+    {
+      "id": 8,
+      "name": "Cloud Services Pro",
+      "logo": "/clients/cloud-services-pro.png",
+      "website": "https://cloudservicespro.com"
+    }
+  ]
+}
+

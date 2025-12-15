@@ -93,7 +93,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-b from-black via-slate-900 to-black px-6 py-12 md:px-12 md:py-16 overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-b from-black via-slate-900 to-black px-6 pt-12 pb-8 md:px-12 md:pt-16 md:pb-12 overflow-hidden">
       {/* Animated Grid Background */}
       <motion.div
         className="absolute inset-0 opacity-20"

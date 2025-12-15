@@ -1,0 +1,134 @@
+{
+  "teamMembers": [
+    {
+      "name": "Tazminur Rahman Tanim",
+      "role": "CEO & Founder",
+      "bio": "Visionary leader with 2+ years of experience in digital transformation and business strategy.",
+      "imageUrl": "/members/IMG_0256=.png",
+      "skills": ["Strategy", "Leadership", "Business Development"],
+      "linkedin": "https://linkedin.com/in/alexjohnson",
+      "twitter": "https://twitter.com/alexjohnson"
+    },
+    {
+      "name": "Foysal Munsy",
+      "role": "Lead Developer",
+      "bio": "Full-stack developer passionate about building scalable and innovative web solutions.",
+      "imageUrl": "/members/foysal.png",
+      "skills": ["React", "Node.js", "Next.js", "TypeScript"],
+      "linkedin": "https://linkedin.com/in/sarahchen",
+      "github": "https://github.com/sarahchen"
+    },
+    {
+      "name": "Michael Rodriguez",
+      "role": "Creative Director",
+      "bio": "Award-winning designer specializing in brand identity and user experience design.",
+      "imageUrl": "/members/michael-rodriguez.jpg",
+      "skills": ["UI/UX Design", "Branding", "Motion Graphics"],
+      "linkedin": "https://linkedin.com/in/michaelrodriguez",
+      "dribbble": "https://dribbble.com/michaelrodriguez"
+    },
+    {
+      "name": "Emily Watson",
+      "role": "Marketing Strategist",
+      "bio": "Data-driven marketer with expertise in SEO, content strategy, and digital campaigns.",
+      "imageUrl": "/members/emily-watson.jpg",
+      "skills": ["SEO", "Content Marketing", "Analytics"],
+      "linkedin": "https://linkedin.com/in/emilywatson",
+      "twitter": "https://twitter.com/emilywatson"
+    },
+    {
+      "name": "David Kim",
+      "role": "Senior Developer",
+      "bio": "Backend specialist focused on building robust APIs and scalable infrastructure.",
+      "imageUrl": "/members/david-kim.jpg",
+      "skills": ["Python", "MongoDB", "AWS", "DevOps"],
+      "linkedin": "https://linkedin.com/in/davidkim",
+      "github": "https://github.com/davidkim"
+    },
+    {
+      "name": "Lisa Anderson",
+      "role": "Video Editor",
+      "bio": "Creative video editor bringing stories to life through compelling visual narratives.",
+      "imageUrl": "/members/lisa-anderson.jpg",
+      "skills": ["Video Editing", "Motion Graphics", "Animation"],
+      "linkedin": "https://linkedin.com/in/lisaanderson",
+      "vimeo": "https://vimeo.com/lisaanderson"
+    },
+    {
+      "name": "James Wilson",
+      "role": "Frontend Developer",
+      "bio": "Passionate about creating beautiful and intuitive user interfaces with modern web technologies.",
+      "imageUrl": "/members/james-wilson.jpg",
+      "skills": ["React", "Vue.js", "Tailwind CSS", "Framer Motion"],
+      "linkedin": "https://linkedin.com/in/jameswilson",
+      "github": "https://github.com/jameswilson"
+    },
+    {
+      "name": "Maria Garcia",
+      "role": "UX Designer",
+      "bio": "User experience designer focused on creating meaningful and accessible digital experiences.",
+      "imageUrl": "/members/maria-garcia.jpg",
+      "skills": ["User Research", "Wireframing", "Prototyping", "Accessibility"],
+      "linkedin": "https://linkedin.com/in/mariagarcia",
+      "dribbble": "https://dribbble.com/mariagarcia"
+    },
+    {
+      "name": "Robert Taylor",
+      "role": "Digital Marketing Manager",
+      "bio": "Expert in paid advertising, conversion optimization, and marketing automation.",
+      "imageUrl": "/members/robert-taylor.jpg",
+      "skills": ["Google Ads", "Facebook Ads", "Marketing Automation", "CRO"],
+      "linkedin": "https://linkedin.com/in/roberttaylor",
+      "twitter": "https://twitter.com/roberttaylor"
+    }
+  ],
+  "departments": [
+    {
+      "name": "Development",
+      "description": "Building cutting-edge web applications and digital solutions",
+      "icon": "💻",
+      "members": 8
+    },
+    {
+      "name": "Design",
+      "description": "Creating beautiful and functional user experiences",
+      "icon": "🎨",
+      "members": 5
+    },
+    {
+      "name": "Marketing",
+      "description": "Driving growth through strategic digital marketing campaigns",
+      "icon": "📈",
+      "members": 6
+    },
+    {
+      "name": "Support",
+      "description": "Ensuring client success with dedicated support and maintenance",
+      "icon": "🤝",
+      "members": 4
+    }
+  ],
+  "stats": [
+    {
+      "number": "23+",
+      "label": "Team Members",
+      "icon": "👥"
+    },
+    {
+      "number": "15+",
+      "label": "Countries Represented",
+      "icon": "🌍"
+    },
+    {
+      "number": "5+",
+      "label": "Years Together",
+      "icon": "⭐"
+    },
+    {
+      "number": "100%",
+      "label": "Remote Team",
+      "icon": "🌐"
+    }
+  ]
+}
+

@@ -4,6 +4,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
+import teamData from "@/data/team.json";
 
 export default function TeamPage() {
   const containerVariants = {
@@ -41,96 +43,7 @@ export default function TeamPage() {
     },
   };
 
-  const teamMembers = [
-    {
-      name: "Alex Johnson",
-      role: "CEO & Founder",
-      bio: "Visionary leader with 10+ years of experience in digital transformation and business strategy.",
-      image: "👨‍💼",
-      skills: ["Strategy", "Leadership", "Business Development"],
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com",
-    },
-    {
-      name: "Sarah Chen",
-      role: "Lead Developer",
-      bio: "Full-stack developer passionate about building scalable and innovative web solutions.",
-      image: "👩‍💻",
-      skills: ["React", "Node.js", "Next.js", "TypeScript"],
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
-    },
-    {
-      name: "Michael Rodriguez",
-      role: "Creative Director",
-      bio: "Award-winning designer specializing in brand identity and user experience design.",
-      image: "🎨",
-      skills: ["UI/UX Design", "Branding", "Motion Graphics"],
-      linkedin: "https://linkedin.com",
-      dribbble: "https://dribbble.com",
-    },
-    {
-      name: "Emily Watson",
-      role: "Marketing Strategist",
-      bio: "Data-driven marketer with expertise in SEO, content strategy, and digital campaigns.",
-      image: "📊",
-      skills: ["SEO", "Content Marketing", "Analytics"],
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com",
-    },
-    {
-      name: "David Kim",
-      role: "Senior Developer",
-      bio: "Backend specialist focused on building robust APIs and scalable infrastructure.",
-      image: "⚙️",
-      skills: ["Python", "MongoDB", "AWS", "DevOps"],
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
-    },
-    {
-      name: "Lisa Anderson",
-      role: "Video Editor",
-      bio: "Creative video editor bringing stories to life through compelling visual narratives.",
-      image: "🎬",
-      skills: ["Video Editing", "Motion Graphics", "Animation"],
-      linkedin: "https://linkedin.com",
-      vimeo: "https://vimeo.com",
-    },
-  ];
-
-  const departments = [
-    {
-      name: "Development",
-      description: "Building cutting-edge web applications and digital solutions",
-      icon: "💻",
-      members: 8,
-    },
-    {
-      name: "Design",
-      description: "Creating beautiful and functional user experiences",
-      icon: "🎨",
-      members: 5,
-    },
-    {
-      name: "Marketing",
-      description: "Driving growth through strategic digital marketing campaigns",
-      icon: "📈",
-      members: 6,
-    },
-    {
-      name: "Support",
-      description: "Ensuring client success with dedicated support and maintenance",
-      icon: "🤝",
-      members: 4,
-    },
-  ];
-
-  const stats = [
-    { number: "23+", label: "Team Members", icon: "👥" },
-    { number: "15+", label: "Countries Represented", icon: "🌍" },
-    { number: "5+", label: "Years Together", icon: "⭐" },
-    { number: "100%", label: "Remote Team", icon: "🌐" },
-  ];
+  const { teamMembers, departments, stats } = teamData;
 
   return (
     <div className="flex min-h-screen flex-col bg-black">
@@ -262,33 +175,49 @@ export default function TeamPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="group relative overflow-hidden rounded-xl border border-slate-800 bg-gradient-to-br from-slate-900 to-slate-800 p-6 transition-all hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20"
+                  className="group relative overflow-hidden rounded-xl border border-slate-800 bg-gradient-to-br from-slate-900 to-slate-800 transition-all hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20"
                 >
                   <div className="absolute right-0 top-0 h-32 w-32 rounded-full bg-cyan-500/10 blur-3xl"></div>
                   
-                  {/* Avatar */}
-                  <div className="mb-4 flex justify-center">
-                    <div className="relative">
-                      <div className="flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 text-4xl">
-                        {member.image}
+                  {/* Professional Image */}
+                  <div className="relative h-80 w-full overflow-hidden bg-slate-800">
+                    {member.imageUrl ? (
+                      <Image
+                        src={member.imageUrl}
+                        alt={member.name}
+                        fill
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      />
+                    ) : (
+                      <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-cyan-400/20 to-blue-500/20 text-4xl font-bold text-white">
+                        {member.name.split(' ').map(n => n[0]).join('')}
                       </div>
-                      <div className="absolute -bottom-1 -right-1 h-6 w-6 rounded-full border-2 border-slate-900 bg-green-500"></div>
+                    )}
+                    {/* Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60"></div>
+                    
+                    {/* Status Indicator */}
+                    <div className="absolute top-4 right-4">
+                      <div className="h-3 w-3 rounded-full border-2 border-slate-900 bg-green-500"></div>
                     </div>
                   </div>
 
-                  {/* Name and Role */}
-                  <div className="mb-3 text-center">
-                    <h3 className="mb-1 text-xl font-semibold text-white">{member.name}</h3>
-                    <p className="text-sm font-medium text-cyan-400">{member.role}</p>
-                  </div>
+                  {/* Content */}
+                  <div className="p-6">
+                    {/* Name and Role */}
+                    <div className="mb-3">
+                      <h3 className="mb-1 text-xl font-semibold text-white">{member.name}</h3>
+                      <p className="text-sm font-medium text-cyan-400">{member.role}</p>
+                    </div>
 
-                  {/* Bio */}
-                  <p className="mb-4 text-center text-sm leading-relaxed text-gray-400">
-                    {member.bio}
-                  </p>
+                    {/* Bio */}
+                    <p className="mb-4 text-sm leading-relaxed text-gray-400">
+                      {member.bio}
+                    </p>
 
-                  {/* Skills */}
-                  <div className="mb-4 flex flex-wrap justify-center gap-2">
+                    {/* Skills */}
+                    <div className="mb-4 flex flex-wrap gap-2">
                     {member.skills.map((skill) => (
                       <span
                         key={skill}
@@ -299,8 +228,8 @@ export default function TeamPage() {
                     ))}
                   </div>
 
-                  {/* Social Links */}
-                  <div className="flex justify-center gap-3">
+                    {/* Social Links */}
+                    <div className="flex gap-3">
                     {member.linkedin && (
                       <a
                         href={member.linkedin}
@@ -364,6 +293,7 @@ export default function TeamPage() {
                         </svg>
                       </a>
                     )}
+                    </div>
                   </div>
                 </motion.div>
               ))}

@@ -46,10 +46,10 @@ export default function Navbar() {
             Our Team
           </Link>
           <Link
-            href="/blog"
+            href="/portfolio"
             className="text-sm font-medium text-gray-300 transition-colors hover:text-white"
           >
-            Blog
+            Portfolio
           </Link>
           <Link
             href="/faq"
