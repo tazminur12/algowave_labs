@@ -114,9 +114,7 @@ export default function PortfolioPage() {
               className="mb-6 text-4xl font-bold leading-tight tracking-tight md:text-5xl lg:text-6xl"
               style={{ fontFamily: 'var(--font-space-grotesk), sans-serif' }}
             >
-              <span className="text-white">Our</span>
-              <br />
-              <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              <span className="text-white">Our</span> <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                 Portfolio
               </span>
             </motion.h1>

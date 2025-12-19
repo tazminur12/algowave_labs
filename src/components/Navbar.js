@@ -68,7 +68,7 @@ export default function Navbar() {
 
         {/* Get Started Button */}
         <Link
-          href="/get-started"
+          href="/contact"
           className="rounded-lg bg-gradient-to-r from-cyan-400 to-blue-500 px-6 py-2.5 text-sm font-semibold text-white transition-all hover:from-cyan-500 hover:to-blue-600 hover:shadow-lg hover:shadow-cyan-500/50"
         >
           Get Started

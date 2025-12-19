@@ -48,7 +48,7 @@ export default function Clients() {
               animate={
                 isMounted
                   ? {
-                      x: [0, -50 * clientsData.clients.length * 16],
+                      x: [0, "-50%"],
                     }
                   : {}
               }
@@ -56,9 +56,12 @@ export default function Clients() {
                 x: {
                   repeat: Infinity,
                   repeatType: "loop",
-                  duration: 40,
+                  duration: 60,
                   ease: "linear",
                 },
+              }}
+              style={{
+                width: "fit-content",
               }}
             >
               {duplicatedClients.map((client, index) => (

@@ -30,24 +30,38 @@ export default function ContactPage() {
     setIsSubmitting(true);
     setSubmitStatus(null);
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitStatus("success");
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        company: "",
-        service: "",
-        message: "",
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-      
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          service: "",
+          message: "",
+        });
+      } else {
+        setSubmitStatus("error");
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
       // Reset status message after 5 seconds
       setTimeout(() => {
         setSubmitStatus(null);
       }, 5000);
-    }, 1500);
+    }
   };
 
   const containerVariants = {
@@ -133,7 +147,7 @@ export default function ContactPage() {
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative min-h-[50vh] bg-gradient-to-b from-black via-slate-900 to-black px-6 py-16 md:px-12 md:py-24 overflow-hidden">
+        <section className="relative min-h-[40vh] bg-gradient-to-b from-black via-slate-900 to-black px-6 py-12 md:px-12 md:py-16 overflow-hidden">
           {/* Background Effects */}
           <div className="absolute inset-0 overflow-hidden">
             <motion.div
@@ -176,7 +190,7 @@ export default function ContactPage() {
 
             <motion.h1
               variants={itemVariants}
-              className="mb-6 text-4xl font-bold leading-tight tracking-tight md:text-5xl lg:text-6xl"
+              className="mb-6 text-3xl font-bold leading-tight tracking-tight md:text-4xl lg:text-5xl"
               style={{ fontFamily: 'var(--font-space-grotesk), sans-serif' }}
             >
               <span className="text-white">Let's Start a</span>
@@ -188,7 +202,7 @@ export default function ContactPage() {
 
             <motion.p
               variants={itemVariants}
-              className="mx-auto max-w-2xl text-lg leading-relaxed text-gray-300 md:text-xl"
+              className="mx-auto max-w-2xl text-base leading-relaxed text-gray-300 md:text-lg"
             >
               Have a project in mind? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
             </motion.p>
@@ -207,13 +221,13 @@ export default function ContactPage() {
                 transition={{ duration: 0.8 }}
               >
                 <h2
-                  className="mb-6 text-3xl font-bold text-white md:text-4xl"
+                  className="mb-6 text-2xl font-bold text-white md:text-3xl"
                   style={{ fontFamily: 'var(--font-space-grotesk), sans-serif' }}
                 >
                   Send us a Message
                 </h2>
                 <p className="mb-8 text-gray-400">
-                  Fill out the form below and we'll get back to you within 24 hours.
+                  Fill out the form below and we&apos;ll get back to you within 24 hours.
                 </p>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -262,7 +276,7 @@ export default function ContactPage() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full rounded-lg border border-slate-800 bg-slate-900/50 px-4 py-3 text-white placeholder-gray-500 focus:border-cyan-400/50 focus:outline-none focus:ring-2 focus:ring-cyan-400/20 transition-all"
+                        className="w-full rounded-lg border border-slate-800 bg-slate-900/50 px-3 py-2.5 text-white placeholder-gray-500 focus:border-cyan-400/50 focus:outline-none focus:ring-2 focus:ring-cyan-400/20 transition-all"
                         placeholder="+1 (234) 567-890"
                       />
                     </div>
@@ -277,7 +291,7 @@ export default function ContactPage() {
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
-                        className="w-full rounded-lg border border-slate-800 bg-slate-900/50 px-4 py-3 text-white placeholder-gray-500 focus:border-cyan-400/50 focus:outline-none focus:ring-2 focus:ring-cyan-400/20 transition-all"
+                        className="w-full rounded-lg border border-slate-800 bg-slate-900/50 px-3 py-2.5 text-white placeholder-gray-500 focus:border-cyan-400/50 focus:outline-none focus:ring-2 focus:ring-cyan-400/20 transition-all"
                         placeholder="Your Company"
                       />
                     </div>
@@ -293,7 +307,7 @@ export default function ContactPage() {
                       value={formData.service}
                       onChange={handleChange}
                       required
-                      className="w-full rounded-lg border border-slate-800 bg-slate-900/50 px-4 py-3 text-white focus:border-cyan-400/50 focus:outline-none focus:ring-2 focus:ring-cyan-400/20 transition-all"
+                      className="w-full rounded-lg border border-slate-800 bg-slate-900/50 px-3 py-2.5 text-white focus:border-cyan-400/50 focus:outline-none focus:ring-2 focus:ring-cyan-400/20 transition-all"
                     >
                       <option value="" className="bg-slate-900">Select a service</option>
                       {services.map((service) => (
@@ -315,7 +329,7 @@ export default function ContactPage() {
                       onChange={handleChange}
                       required
                       rows={6}
-                      className="w-full rounded-lg border border-slate-800 bg-slate-900/50 px-4 py-3 text-white placeholder-gray-500 focus:border-cyan-400/50 focus:outline-none focus:ring-2 focus:ring-cyan-400/20 transition-all resize-none"
+                      className="w-full rounded-lg border border-slate-800 bg-slate-900/50 px-3 py-2.5 text-white placeholder-gray-500 focus:border-cyan-400/50 focus:outline-none focus:ring-2 focus:ring-cyan-400/20 transition-all resize-none"
                       placeholder="Tell us about your project..."
                     />
                   </div>
@@ -335,12 +349,27 @@ export default function ContactPage() {
                     </motion.div>
                   )}
 
+                  {submitStatus === "error" && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className="rounded-lg border border-red-500/50 bg-red-500/10 p-4 text-red-400"
+                    >
+                      <div className="flex items-center gap-2">
+                        <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span>Something went wrong. Please try again later.</span>
+                      </div>
+                    </motion.div>
+                  )}
+
                   <motion.button
                     type="submit"
                     disabled={isSubmitting}
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="w-full rounded-lg bg-gradient-to-r from-cyan-400 to-blue-500 px-8 py-3.5 text-base font-semibold text-white transition-all hover:from-cyan-500 hover:to-blue-600 hover:shadow-lg hover:shadow-cyan-500/50 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full rounded-lg bg-gradient-to-r from-cyan-400 to-blue-500 px-6 py-3 text-base font-semibold text-white transition-all hover:from-cyan-500 hover:to-blue-600 hover:shadow-lg hover:shadow-cyan-500/50 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? (
                       <span className="flex items-center justify-center gap-2">
@@ -372,7 +401,7 @@ export default function ContactPage() {
               >
                 <div>
                   <h2
-                    className="mb-6 text-3xl font-bold text-white md:text-4xl"
+                    className="mb-6 text-2xl font-bold text-white md:text-3xl"
                     style={{ fontFamily: 'var(--font-space-grotesk), sans-serif' }}
                   >
                     Contact Information
@@ -391,7 +420,7 @@ export default function ContactPage() {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.6, delay: index * 0.1 }}
-                      className={`group block rounded-xl border border-slate-800 bg-slate-900/50 p-6 transition-all hover:border-cyan-400/50 hover:bg-slate-800 ${!method.link ? 'cursor-default' : 'cursor-pointer'}`}
+                      className={`group block rounded-xl border border-slate-800 bg-slate-900/50 p-5 transition-all hover:border-cyan-400/50 hover:bg-slate-800 ${!method.link ? 'cursor-default' : 'cursor-pointer'}`}
                     >
                       <div className="flex items-start gap-4">
                         <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-cyan-400 to-blue-500 text-white">
@@ -409,7 +438,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Social Media */}
-                <div className="rounded-xl border border-slate-800 bg-slate-900/50 p-6">
+                <div className="rounded-xl border border-slate-800 bg-slate-900/50 p-5">
                   <h3 className="mb-4 text-lg font-semibold text-white">Follow Us</h3>
                   <p className="mb-4 text-sm text-gray-400">
                     Stay connected with us on social media for updates and insights.
@@ -436,7 +465,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Business Hours */}
-                <div className="rounded-xl border border-slate-800 bg-slate-900/50 p-6">
+                <div className="rounded-xl border border-slate-800 bg-slate-900/50 p-5">
                   <h3 className="mb-4 text-lg font-semibold text-white">Business Hours</h3>
                   <div className="space-y-2 text-sm text-gray-400">
                     <div className="flex justify-between">
@@ -502,7 +531,7 @@ export default function ContactPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="rounded-xl border border-slate-800 bg-slate-800/50 p-6"
+                  className="rounded-xl border border-slate-800 bg-slate-800/50 p-5"
                 >
                   <h3 className="mb-2 text-lg font-semibold text-white">{faq.question}</h3>
                   <p className="text-gray-400 leading-relaxed">{faq.answer}</p>
