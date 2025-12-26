@@ -31,19 +31,19 @@
       "name": "Md Jabed Hossain",
       "role": "Full Stack Developer",
       "bio": "Passionate full-stack developer experienced in building modern web applications. Skilled in both frontend and backend technologies to deliver complete solutions.",
-      "imageUrl": "/members/jabed.png",
+      "imageUrl": "https://i.ibb.co/3927kMw8/rafsan.jpg",
       "skills": ["MERN Stack", "Next.js", "Redux", "PostgreSQL"],
-      "linkedin": "#",
-      "github": "#"
+      "linkedin": "https://www.linkedin.com/in/mdjabedhossain12/",
+      "github": "https://github.com/Jabedhossain101"
     },
     {
-      "name": "Michael Rodriguez",
-      "role": "Creative Director",
+      "name": "Injam Hossan Mamun",
+      "role": "UI/UX Designer & Frontend Developer",
       "bio": "Award-winning designer specializing in brand identity and user experience design.",
-      "imageUrl": "/members/michael-rodriguez.jpg",
-      "skills": ["UI/UX Design", "Branding", "Motion Graphics"],
-      "linkedin": "https://linkedin.com/in/michaelrodriguez",
-      "dribbble": "https://dribbble.com/michaelrodriguez"
+      "imageUrl": "https://i.ibb.co/214qzj4X/new-1.png",
+      "skills": ["UI/UX Design", "Branding", "Motion Graphics,", "React", "Next.js"],
+      "linkedin": "https://www.linkedin.com/in/injamhossanmamun/",
+      "github": "https://dribbble.com/michaelrodriguez"
     },
     {
       "name": "Emily Watson",
