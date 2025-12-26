@@ -2,21 +2,39 @@
   "teamMembers": [
     {
       "name": "Tazminur Rahman Tanim",
-      "role": "CEO & Founder",
-      "bio": "Visionary leader with 2+ years of experience in digital transformation and business strategy.",
+      "role": "CEO & Founder | Full Stack Developer",
+      "bio": "Visionary leader and expert Full Stack Developer with 2+ years of experience in digital transformation, business strategy, and building scalable web applications.",
       "imageUrl": "/members/IMG_0256=.png",
-      "skills": ["Strategy", "Leadership", "Business Development"],
-      "linkedin": "https://linkedin.com/in/alexjohnson",
-      "twitter": "https://twitter.com/alexjohnson"
+      "skills": ["Strategy", "Leadership", "Full Stack Development", "MERN Stack"],
+      "linkedin": "www.linkedin.com/in/tazminur-rahman-tanim-305315336",
+      "github": "https://github.com/tazminur12"
     },
     {
       "name": "Foysal Munsy",
-      "role": "Lead Developer",
-      "bio": "Full-stack developer passionate about building scalable and innovative web solutions.",
+      "role": "Senior Developer",
+      "bio": "Senior Full-stack Developer and Competitive Programmer with exceptional problem-solving skills. Expert in React, Next.js, and Node.js with a strong Codeforces rating.",
       "imageUrl": "/members/foysal.png",
-      "skills": ["React", "Node.js", "Next.js", "TypeScript"],
-      "linkedin": "https://linkedin.com/in/sarahchen",
-      "github": "https://github.com/sarahchen"
+      "skills": ["React/Next.js", "Competitive Programming", "Node.js", "Algorithms"],
+      "linkedin": "https://www.linkedin.com/in/foysal-munsy",
+      "github": "https://github.com/foysal-munsy"
+    },
+    {
+      "name": "Naeem Haider",
+      "role": "Full Stack Developer & Shopify Specialist",
+      "bio": "Full-stack developer building clean, scalable apps with React, Next.js, Node.js & MongoDB. Specializes in Shopify and AI integrations for dynamic web experiences.",
+      "imageUrl": "/members/naeem-haider1.png",
+      "skills": ["React/Next.js", "Shopify", "TypeScript", "AI Integration"],
+      "linkedin": "https://www.linkedin.com/in/md-naeem-haider/",
+      "github": "#"
+    },
+   {
+      "name": "Md Jabed Hossain",
+      "role": "Full Stack Developer",
+      "bio": "Passionate full-stack developer experienced in building modern web applications. Skilled in both frontend and backend technologies to deliver complete solutions.",
+      "imageUrl": "/members/jabed.png",
+      "skills": ["MERN Stack", "Next.js", "Redux", "PostgreSQL"],
+      "linkedin": "#",
+      "github": "#"
     },
     {
       "name": "Michael Rodriguez",
@@ -44,6 +62,15 @@
       "skills": ["Python", "MongoDB", "AWS", "DevOps"],
       "linkedin": "https://linkedin.com/in/davidkim",
       "github": "https://github.com/davidkim"
+    },
+      {
+      "name": "Shoisob Saha",
+      "role": "WordPress Developer",
+      "bio": "Expert WordPress developer specializing in custom theme development, plugin customization, and high-performance WooCommerce stores.",
+      "imageUrl": "/members/shoisob.png",
+      "skills": ["WordPress", "PHP", "Elementor", "WooCommerce"],
+      "linkedin": "#",
+      "github": "#"
     },
     {
       "name": "Lisa Anderson",
@@ -73,7 +100,7 @@
       "dribbble": "https://dribbble.com/mariagarcia"
     },
     {
-      "name": "Robert Taylor",
+      "name": "Jihad Hasan",
       "role": "Digital Marketing Manager",
       "bio": "Expert in paid advertising, conversion optimization, and marketing automation.",
       "imageUrl": "/members/robert-taylor.jpg",

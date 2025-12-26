@@ -2,47 +2,47 @@
   "testimonials": [
     {
       "id": 1,
-      "name": "Sarah Johnson",
-      "role": "CTO",
-      "company": "TechVision Inc.",
-      "image": "/testimonials/sarah.jpg",
-      "content": "AlgoWave Labs transformed our digital presence completely. Their team's expertise in both development and design delivered a product that exceeded our expectations. The attention to detail and performance optimization was outstanding.",
+      "name": "Tanvir Ahmed",
+      "role": "Managing Director",
+      "company": "NextGen Properties",
+      "image": "/testimonials/tanvir.jpg",
+      "content": "AlgoWave Labs built our real estate website from scratch, and the result is fantastic. The user experience is smooth, and we are getting more leads than ever. Highly professional team!",
       "rating": 5
     },
     {
       "id": 2,
-      "name": "Michael Chen",
+      "name": "Farhana Islam",
       "role": "Founder",
-      "company": "InnovateStart",
-      "image": "/testimonials/michael.jpg",
-      "content": "Working with AlgoWave was a game-changer for our startup. They understood our vision immediately and executed it with precision. The communication was seamless, and they delivered ahead of schedule.",
+      "company": "StyleCraze Boutique",
+      "image": "/testimonials/farhana.jpg",
+      "content": "I needed an e-commerce site for my boutique, and they delivered exactly what I envisioned. The design is elegant, and the admin panel is very easy to use. Great support throughout the process.",
       "rating": 5
     },
     {
       "id": 3,
-      "name": "Emily Rodriguez",
-      "role": "Marketing Director",
-      "company": "GlobalReach",
-      "image": "/testimonials/emily.jpg",
-      "content": "The marketing campaign strategies implemented by AlgoWave Labs helped us increase our ROI by 200% within the first quarter. Their data-driven approach and creative solutions are truly impressive.",
+      "name": "Mahmudur Rahman",
+      "role": "CEO",
+      "company": "TechSolution BD",
+      "image": "/testimonials/mahmud.jpg",
+      "content": "Their digital marketing service helped us reach the right audience. Our sales increased significantly within just two months. They really understand the local market dynamics.",
       "rating": 5
     },
     {
       "id": 4,
-      "name": "David Kim",
-      "role": "Product Manager",
-      "company": "NextGen Solutions",
-      "image": "/testimonials/david.jpg",
-      "content": "We needed a complex web application built from scratch, and AlgoWave Labs delivered a robust, scalable solution. Their technical proficiency and problem-solving skills are top-notch.",
+      "name": "Rafiqul Islam",
+      "role": "Director",
+      "company": "EduCare Coaching",
+      "image": "/testimonials/rafiq.jpg",
+      "content": "We automated our student management system with their custom software. It has saved us hours of manual work every day. The team is very responsive and skilled.",
       "rating": 5
     },
     {
       "id": 5,
-      "name": "Jessica Lee",
-      "role": "CEO",
-      "company": "Creative Minds",
-      "image": "/testimonials/jessica.jpg",
-      "content": "I was blown away by the branding work they did for us. They captured the essence of our company perfectly and created a visual identity that resonates with our audience. Highly recommended!",
+      "name": "Nusrat Jahan",
+      "role": "Marketing Head",
+      "company": "Foodie Express",
+      "image": "/testimonials/nusrat.jpg",
+      "content": "The branding and social media creatives they designed for us were top-notch. Our brand engagement on Facebook has doubled since we started working with AlgoWave Labs.",
       "rating": 5
     }
   ]

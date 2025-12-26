@@ -63,7 +63,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=61585001855004"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 text-white transition-colors hover:bg-cyan-500"
@@ -195,7 +195,7 @@ export default function Footer() {
                   href="tel:+1234567890"
                   className="text-sm text-cyan-400 transition-colors hover:text-cyan-300"
                 >
-                  +1 (234) 567-890
+                  +88 01540 288718
                 </a>
               </li>
               <li className="flex items-start gap-3">
@@ -234,13 +234,13 @@ export default function Footer() {
             </p>
             <div className="flex gap-6">
               <Link
-                href="/privacy"
+                href="/privacy-policy"
                 className="text-sm text-gray-400 transition-colors hover:text-cyan-400"
               >
                 Privacy Policy
               </Link>
               <Link
-                href="/terms"
+                href="/terms-of-service"
                 className="text-sm text-gray-400 transition-colors hover:text-cyan-400"
               >
                 Terms of Service

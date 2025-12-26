@@ -480,7 +480,7 @@ export default function Hero() {
             whileTap={{ scale: 0.95 }}
           >
             <Link
-              href="/consultation"
+              href="/contact"
               className="group flex items-center gap-2 rounded-lg bg-gradient-to-r from-cyan-400 to-blue-500 px-6 py-2.5 text-sm font-semibold text-white"
             >
               Get a Free Consultation

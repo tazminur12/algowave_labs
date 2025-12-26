@@ -310,14 +310,16 @@ export default function PortfolioPage() {
               </button>
 
               {/* Project Image */}
-              <div className={`relative h-64 w-full overflow-hidden bg-gradient-to-br ${getCategoryColor(selectedProject.category)}`}>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className={`text-8xl font-bold text-white opacity-30`}>
-                    {selectedProject.title.charAt(0)}
-                  </div>
-                </div>
+              <div className="relative h-64 w-full overflow-hidden">
+                <Image
+                  src={selectedProject.image}
+                  alt={selectedProject.title}
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
                 <div className="absolute bottom-4 left-4">
-                  <span className={`rounded-full px-4 py-2 text-sm font-semibold bg-gradient-to-r ${getCategoryColor(selectedProject.category)} text-white`}>
+                  <span className={`rounded-full px-4 py-2 text-sm font-semibold bg-gradient-to-r ${getCategoryColor(selectedProject.category)} text-white shadow-lg`}>
                     {selectedProject.category}
                   </span>
                 </div>
@@ -469,7 +471,7 @@ export default function PortfolioPage() {
               Ready to Start Your Project?
             </h2>
             <p className="mb-8 text-lg text-gray-300">
-              Let's discuss how we can help you achieve similar results. 
+              Let&apos;s discuss how we can help you achieve similar results. 
               Get in touch for a free consultation.
             </p>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">

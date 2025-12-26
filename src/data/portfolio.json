@@ -6,7 +6,7 @@
       "client": "TechStart Retail",
       "category": "Web Development",
       "description": "A full-featured e-commerce platform with custom shopping cart, payment integration, and admin dashboard. Built for scalability and performance.",
-      "image": "/portfolio/ecommerce.jpg",
+      "image": "https://i.ibb.co.com/849Zz18d/62909470-348e-4903-a4c4-7221b2d03473.webp",
       "technologies": ["Next.js", "React", "Node.js", "MongoDB", "Stripe"],
       "results": {
         "metric1": "300%",
@@ -30,7 +30,7 @@
       "client": "Global Finance Corp",
       "category": "Web Development",
       "description": "Complete redesign of corporate website with modern UI/UX, improved performance, and enhanced user experience. Resulted in significant increase in lead generation.",
-      "image": "/portfolio/corporate.jpg",
+      "image": "https://i.ibb.co.com/9kjr42bV/3d3d4b68-80f0-4660-844c-20f785b9c3f3.webp",
       "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
       "results": {
         "metric1": "250%",
@@ -54,7 +54,7 @@
       "client": "Fitness Brand Co",
       "category": "Digital Marketing",
       "description": "Comprehensive social media marketing campaign across Facebook and Instagram. Focused on lead generation and brand awareness with measurable ROI.",
-      "image": "/portfolio/marketing.jpg",
+      "image": "https://i.ibb.co.com/jP8tG8gC/f2477382-7472-4d56-a058-f549c488775f.webp",
       "technologies": ["Facebook Ads", "Instagram Ads", "Google Analytics", "Pixel Tracking"],
       "results": {
         "metric1": "500%",
@@ -78,7 +78,7 @@
       "client": "GreenTech Solutions",
       "category": "Branding & Design",
       "description": "Complete brand identity design including logo, color palette, typography, and brand guidelines. Created a cohesive visual identity across all touchpoints.",
-      "image": "/portfolio/branding.jpg",
+      "image": "https://i.ibb.co.com/5h8cZ5fN/89665a58-c0b8-4c15-8664-d652f1e6b8a9.webp",
       "technologies": ["Adobe Illustrator", "Figma", "Brand Guidelines"],
       "results": {
         "metric1": "85%",
@@ -102,7 +102,7 @@
       "client": "CloudManage Pro",
       "category": "Web Development",
       "description": "Custom SaaS dashboard with real-time analytics, user management, and reporting features. Built with scalability and user experience in mind.",
-      "image": "/portfolio/saas.jpg",
+      "image": "https://i.ibb.co.com/GRL9hN1R/5799a4c8-3560-44e2-99de-4340d859b407.webp",
       "technologies": ["React", "Node.js", "PostgreSQL", "Chart.js", "Stripe"],
       "results": {
         "metric1": "200%",
@@ -126,7 +126,7 @@
       "client": "Startup Accelerator",
       "category": "Video Editing",
       "description": "Created engaging promotional videos and social media reels for product launch. Videos generated high engagement and increased brand visibility.",
-      "image": "/portfolio/video.jpg",
+      "image": "https://i.ibb.co.com/KxX9pQzS/278b1111-e407-42f0-a083-097c558c7075.webp",
       "technologies": ["Adobe Premiere", "After Effects", "Motion Graphics"],
       "results": {
         "metric1": "1M+",
@@ -150,7 +150,7 @@
       "client": "Local Restaurant Chain",
       "category": "Digital Marketing",
       "description": "Strategic Google Ads campaign targeting local customers. Optimized for conversions with focus on foot traffic and online orders.",
-      "image": "/portfolio/google-ads.jpg",
+      "image": "https://ibb.co.com/0v1PWXV",
       "technologies": ["Google Ads", "Google Analytics", "Conversion Tracking"],
       "results": {
         "metric1": "400%",
@@ -174,7 +174,7 @@
       "client": "Artisan Crafts Store",
       "category": "Web Development",
       "description": "Custom WordPress e-commerce site with WooCommerce integration. Designed for easy product management and seamless shopping experience.",
-      "image": "/portfolio/wordpress.jpg",
+      "image": "https://i.ibb.co.com/4gQ6xX1q/wordpress-ecommerce.jpg",
       "technologies": ["WordPress", "WooCommerce", "PHP", "Custom Theme"],
       "results": {
         "metric1": "180%",
