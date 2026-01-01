@@ -6,7 +6,8 @@
       "bio": "Visionary leader and expert Full Stack Developer with 2+ years of experience in digital transformation, business strategy, and building scalable web applications.",
       "imageUrl": "/members/tanim1.png",
       "skills": ["Strategy", "Leadership", "Full Stack Development", "MERN Stack"],
-      "linkedin": "www.linkedin.com/in/tazminur-rahman-tanim-305315336",
+  
+      "linkedin": "https://www.linkedin.com/in/tazminur-rahman-tanim-305315336",
       "github": "https://github.com/tazminur12"
     },
     {
@@ -14,7 +15,12 @@
       "role": "Senior Developer",
       "bio": "Senior Full-stack Developer and Competitive Programmer with exceptional problem-solving skills. Expert in React, Next.js, and Node.js with a strong Codeforces rating.",
       "imageUrl": "/members/foysal.png",
-      "skills": ["React/Next.js", "Competitive Programming", "Node.js", "Algorithms"],
+      "skills": [
+        "React/Next.js",
+        "Competitive Programming",
+        "Node.js",
+        "Algorithms"
+      ],
       "linkedin": "https://www.linkedin.com/in/foysal-munsy",
       "github": "https://github.com/foysal-munsy"
     },
@@ -27,12 +33,17 @@
       "linkedin": "https://www.linkedin.com/in/md-naeem-haider/",
       "github": "#"
     },
-   {
+    {
       "name": "Md Jabed Hossain",
       "role": "Full Stack Developer",
       "bio": "Passionate full-stack developer experienced in building modern web applications. Skilled in both frontend and backend technologies to deliver complete solutions.",
-      "imageUrl": "/members/avatar.png",
-      "skills": ["MERN Stack", "Next.js", "Redux", "PostgreSQL"],
+      "imageUrl": "/members/mymain.png",
+      "skills": [
+        "MERN Stack",
+        "Next.js",
+        "Redux",
+        "PostgreSQL"
+      ],
       "linkedin": "https://www.linkedin.com/in/mdjabedhossain12/",
       "github": "https://github.com/Jabedhossain101"
     },
@@ -46,6 +57,35 @@
       "twitter": "https://twitter.com/emilywatson"
     },
       {
+      "name": "Injam Hossan Mamun",
+      "role": "UI/UX Designer & Frontend Developer",
+      "bio": "Award-winning designer specializing in brand identity and user experience design.",
+      "imageUrl": "/members/rupom.png",
+      "skills": [
+        "UI/UX Design",
+        "Branding",
+        "Motion Graphics",
+        "React",
+        "Next.js"
+      ],
+      "linkedin": "https://www.linkedin.com/in/injamhossanmamun/",
+      "github": "https://dribbble.com/michaelrodriguez"
+    },
+    {
+      "name": "Adnan Wasti",
+      "role": "Frontend Developer",
+      "bio": "Skilled Frontend Developer with expertise in React and Next.js, dedicated to creating responsive and user-friendly web applications.",
+      "imageUrl": "/members/adnan.jpg",
+      "skills": [
+        "React",
+        "Next.js",
+        "JavaScript",
+        "CSS"
+      ],
+      "linkedin": "https://www.linkedin.com/in/md-rakibul-islam-9b7245234/",
+      "github": "https://github.com/rakibulislam12"
+    },
+    {
       "name": "Shoisob Saha",
       "role": "WordPress Developer",
       "bio": "Expert WordPress developer specializing in custom theme development, plugin customization, and high-performance WooCommerce stores.",
@@ -60,6 +100,7 @@
       "bio": "Creative video editor bringing stories to life through compelling visual narratives.",
       "imageUrl": "/members/avatar.png",
       "skills": ["Video Editing", "Motion Graphics", "Animation"],
+  
       "linkedin": "https://linkedin.com/in/lisaanderson",
       "vimeo": "https://vimeo.com/lisaanderson"
     },
@@ -122,4 +163,3 @@
     }
   ]
 }
-
