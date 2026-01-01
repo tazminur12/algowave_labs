@@ -3,6 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import portfolioData from "@/data/portfolio.json";
@@ -177,15 +178,17 @@ export default function PortfolioPage() {
                   className="group relative overflow-hidden rounded-xl border border-slate-800 bg-gradient-to-br from-slate-900 to-slate-800 transition-all hover:border-cyan-400/50 cursor-pointer"
                   onClick={() => setSelectedProject(project)}
                 >
-                  {/* Project Image Placeholder */}
+                  {/* Project Image */}
                   <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900">
+                    <Image
+                      src={`/${project.image}`}
+                      alt={project.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
                     <div className={`absolute inset-0 bg-gradient-to-br ${getCategoryColor(project.category)} opacity-20`}></div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className={`text-6xl font-bold bg-gradient-to-r ${getCategoryColor(project.category)} bg-clip-text text-transparent`}>
-                        {project.title.charAt(0)}
-                      </div>
-                    </div>
-                    <div className="absolute top-4 right-4">
+                    <div className="absolute top-4 right-4 z-10">
                       <span className={`rounded-full px-3 py-1 text-xs font-semibold bg-gradient-to-r ${getCategoryColor(project.category)} text-white`}>
                         {project.category}
                       </span>
@@ -312,7 +315,7 @@ export default function PortfolioPage() {
               {/* Project Image */}
               <div className="relative h-64 w-full overflow-hidden">
                 <Image
-                  src={selectedProject.image}
+                  src={`/${selectedProject.image}`}
                   alt={selectedProject.title}
                   fill
                   className="object-cover"

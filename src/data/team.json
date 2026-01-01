@@ -4,7 +4,7 @@
       "name": "Tazminur Rahman Tanim",
       "role": "CEO & Founder | Full Stack Developer",
       "bio": "Visionary leader and expert Full Stack Developer with 2+ years of experience in digital transformation, business strategy, and building scalable web applications.",
-      "imageUrl": "/members/IMG_0256=.png",
+      "imageUrl": "/members/tanim1.png",
       "skills": ["Strategy", "Leadership", "Full Stack Development", "MERN Stack"],
       "linkedin": "www.linkedin.com/in/tazminur-rahman-tanim-305315336",
       "github": "https://github.com/tazminur12"
@@ -22,7 +22,7 @@
       "name": "Naeem Haider",
       "role": "Full Stack Developer & Shopify Specialist",
       "bio": "Full-stack developer building clean, scalable apps with React, Next.js, Node.js & MongoDB. Specializes in Shopify and AI integrations for dynamic web experiences.",
-      "imageUrl": "/members/naeem-haider1.png",
+      "imageUrl": "/members/naeem-haider1.jpeg",
       "skills": ["React/Next.js", "Shopify", "TypeScript", "AI Integration"],
       "linkedin": "https://www.linkedin.com/in/md-naeem-haider/",
       "github": "#"
@@ -31,79 +31,43 @@
       "name": "Md Jabed Hossain",
       "role": "Full Stack Developer",
       "bio": "Passionate full-stack developer experienced in building modern web applications. Skilled in both frontend and backend technologies to deliver complete solutions.",
-      "imageUrl": "/members/jabed.png",
+      "imageUrl": "/members/avatar.png",
       "skills": ["MERN Stack", "Next.js", "Redux", "PostgreSQL"],
       "linkedin": "#",
       "github": "#"
     },
     {
-      "name": "Michael Rodriguez",
-      "role": "Creative Director",
-      "bio": "Award-winning designer specializing in brand identity and user experience design.",
-      "imageUrl": "/members/michael-rodriguez.jpg",
-      "skills": ["UI/UX Design", "Branding", "Motion Graphics"],
-      "linkedin": "https://linkedin.com/in/michaelrodriguez",
-      "dribbble": "https://dribbble.com/michaelrodriguez"
-    },
-    {
-      "name": "Emily Watson",
+      "name": "Shohan Hossain Alfaz ",
       "role": "Marketing Strategist",
       "bio": "Data-driven marketer with expertise in SEO, content strategy, and digital campaigns.",
-      "imageUrl": "/members/emily-watson.jpg",
+      "imageUrl": "/members/sohan.jpeg",
       "skills": ["SEO", "Content Marketing", "Analytics"],
       "linkedin": "https://linkedin.com/in/emilywatson",
       "twitter": "https://twitter.com/emilywatson"
-    },
-    {
-      "name": "David Kim",
-      "role": "Senior Developer",
-      "bio": "Backend specialist focused on building robust APIs and scalable infrastructure.",
-      "imageUrl": "/members/david-kim.jpg",
-      "skills": ["Python", "MongoDB", "AWS", "DevOps"],
-      "linkedin": "https://linkedin.com/in/davidkim",
-      "github": "https://github.com/davidkim"
     },
       {
       "name": "Shoisob Saha",
       "role": "WordPress Developer",
       "bio": "Expert WordPress developer specializing in custom theme development, plugin customization, and high-performance WooCommerce stores.",
-      "imageUrl": "/members/shoisob.png",
+      "imageUrl": "/members/shaisab.jpeg",
       "skills": ["WordPress", "PHP", "Elementor", "WooCommerce"],
       "linkedin": "#",
       "github": "#"
     },
     {
-      "name": "Lisa Anderson",
+      "name": "Mahid Khalifa",
       "role": "Video Editor",
       "bio": "Creative video editor bringing stories to life through compelling visual narratives.",
-      "imageUrl": "/members/lisa-anderson.jpg",
+      "imageUrl": "/members/avatar.png",
       "skills": ["Video Editing", "Motion Graphics", "Animation"],
       "linkedin": "https://linkedin.com/in/lisaanderson",
       "vimeo": "https://vimeo.com/lisaanderson"
     },
     {
-      "name": "James Wilson",
-      "role": "Frontend Developer",
-      "bio": "Passionate about creating beautiful and intuitive user interfaces with modern web technologies.",
-      "imageUrl": "/members/james-wilson.jpg",
-      "skills": ["React", "Vue.js", "Tailwind CSS", "Framer Motion"],
-      "linkedin": "https://linkedin.com/in/jameswilson",
-      "github": "https://github.com/jameswilson"
-    },
-    {
-      "name": "Maria Garcia",
-      "role": "UX Designer",
-      "bio": "User experience designer focused on creating meaningful and accessible digital experiences.",
-      "imageUrl": "/members/maria-garcia.jpg",
-      "skills": ["User Research", "Wireframing", "Prototyping", "Accessibility"],
-      "linkedin": "https://linkedin.com/in/mariagarcia",
-      "dribbble": "https://dribbble.com/mariagarcia"
-    },
-    {
       "name": "Jihad Hasan",
       "role": "Digital Marketing Manager",
       "bio": "Expert in paid advertising, conversion optimization, and marketing automation.",
-      "imageUrl": "/members/robert-taylor.jpg",
+      "imageUrl": "/members/jihad.jpeg",
       "skills": ["Google Ads", "Facebook Ads", "Marketing Automation", "CRO"],
       "linkedin": "https://linkedin.com/in/roberttaylor",
       "twitter": "https://twitter.com/roberttaylor"

@@ -136,20 +136,22 @@ export default function Portfolio() {
             >
               {/* Project Image */}
               <div className="relative h-64 w-full overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900">
+                <Image
+                  src={`/${project.image}`}
+                  alt={project.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
                 <div className={`absolute inset-0 bg-gradient-to-br ${getCategoryColor(project.category)} opacity-20`}></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className={`text-6xl font-bold bg-gradient-to-r ${getCategoryColor(project.category)} bg-clip-text text-transparent`}>
-                    {project.title.charAt(0)}
-                  </div>
-                </div>
                 {/* Category Badge */}
-                <div className="absolute top-4 left-4">
+                <div className="absolute top-4 left-4 z-10">
                   <span className={`rounded-full px-3 py-1 text-xs font-semibold bg-gradient-to-r ${getCategoryColor(project.category)} text-white shadow-lg`}>
                     {project.category}
                   </span>
                 </div>
                 {/* Status Badge */}
-                <div className="absolute top-4 right-4">
+                <div className="absolute top-4 right-4 z-10">
                   <span className={`rounded-full px-3 py-1 text-xs font-semibold ${
                     project.status === "Live" 
                       ? "bg-green-500/20 text-green-400 border border-green-500/30" 
@@ -161,7 +163,7 @@ export default function Portfolio() {
                   </span>
                 </div>
                 {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-10">
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <h3 className="mb-2 text-xl font-bold text-white">{project.title}</h3>
                     <p className="text-sm text-gray-300 line-clamp-2">{project.description}</p>
