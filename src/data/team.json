@@ -5,7 +5,12 @@
       "role": "CEO & Founder | Full Stack Developer",
       "bio": "Visionary leader and expert Full Stack Developer with 2+ years of experience in digital transformation, business strategy, and building scalable web applications.",
       "imageUrl": "/members/IMG_0256=.png",
-      "skills": ["Strategy", "Leadership", "Full Stack Development", "MERN Stack"],
+      "skills": [
+        "Strategy",
+        "Leadership",
+        "Full Stack Development",
+        "MERN Stack"
+      ],
       "linkedin": "www.linkedin.com/in/tazminur-rahman-tanim-305315336",
       "github": "https://github.com/tazminur12"
     },
@@ -14,7 +19,12 @@
       "role": "Senior Developer",
       "bio": "Senior Full-stack Developer and Competitive Programmer with exceptional problem-solving skills. Expert in React, Next.js, and Node.js with a strong Codeforces rating.",
       "imageUrl": "/members/foysal.png",
-      "skills": ["React/Next.js", "Competitive Programming", "Node.js", "Algorithms"],
+      "skills": [
+        "React/Next.js",
+        "Competitive Programming",
+        "Node.js",
+        "Algorithms"
+      ],
       "linkedin": "https://www.linkedin.com/in/foysal-munsy",
       "github": "https://github.com/foysal-munsy"
     },
@@ -27,11 +37,11 @@
       "linkedin": "https://www.linkedin.com/in/md-naeem-haider/",
       "github": "#"
     },
-   {
+    {
       "name": "Md Jabed Hossain",
       "role": "Full Stack Developer",
       "bio": "Passionate full-stack developer experienced in building modern web applications. Skilled in both frontend and backend technologies to deliver complete solutions.",
-      "imageUrl": "https://i.ibb.co/3927kMw8/rafsan.jpg",
+      "imageUrl": "/members/rafsan.jpg",
       "skills": ["MERN Stack", "Next.js", "Redux", "PostgreSQL"],
       "linkedin": "https://www.linkedin.com/in/mdjabedhossain12/",
       "github": "https://github.com/Jabedhossain101"
@@ -40,73 +50,25 @@
       "name": "Injam Hossan Mamun",
       "role": "UI/UX Designer & Frontend Developer",
       "bio": "Award-winning designer specializing in brand identity and user experience design.",
-      "imageUrl": "https://i.ibb.co/214qzj4X/new-1.png",
-      "skills": ["UI/UX Design", "Branding", "Motion Graphics,", "React", "Next.js"],
+      "imageUrl": "/members/rupom.png",
+      "skills": [
+        "UI/UX Design",
+        "Branding",
+        "Motion Graphics,",
+        "React",
+        "Next.js"
+      ],
       "linkedin": "https://www.linkedin.com/in/injamhossanmamun/",
       "github": "https://dribbble.com/michaelrodriguez"
     },
     {
-      "name": "Emily Watson",
-      "role": "Marketing Strategist",
-      "bio": "Data-driven marketer with expertise in SEO, content strategy, and digital campaigns.",
-      "imageUrl": "/members/emily-watson.jpg",
-      "skills": ["SEO", "Content Marketing", "Analytics"],
-      "linkedin": "https://linkedin.com/in/emilywatson",
-      "twitter": "https://twitter.com/emilywatson"
-    },
-    {
-      "name": "David Kim",
-      "role": "Senior Developer",
-      "bio": "Backend specialist focused on building robust APIs and scalable infrastructure.",
-      "imageUrl": "/members/david-kim.jpg",
-      "skills": ["Python", "MongoDB", "AWS", "DevOps"],
-      "linkedin": "https://linkedin.com/in/davidkim",
-      "github": "https://github.com/davidkim"
-    },
-      {
-      "name": "Shoisob Saha",
-      "role": "WordPress Developer",
-      "bio": "Expert WordPress developer specializing in custom theme development, plugin customization, and high-performance WooCommerce stores.",
-      "imageUrl": "/members/shoisob.png",
-      "skills": ["WordPress", "PHP", "Elementor", "WooCommerce"],
-      "linkedin": "#",
-      "github": "#"
-    },
-    {
-      "name": "Lisa Anderson",
-      "role": "Video Editor",
-      "bio": "Creative video editor bringing stories to life through compelling visual narratives.",
-      "imageUrl": "/members/lisa-anderson.jpg",
-      "skills": ["Video Editing", "Motion Graphics", "Animation"],
-      "linkedin": "https://linkedin.com/in/lisaanderson",
-      "vimeo": "https://vimeo.com/lisaanderson"
-    },
-    {
-      "name": "James Wilson",
+      "name": "Adnan wasti",
       "role": "Frontend Developer",
-      "bio": "Passionate about creating beautiful and intuitive user interfaces with modern web technologies.",
-      "imageUrl": "/members/james-wilson.jpg",
-      "skills": ["React", "Vue.js", "Tailwind CSS", "Framer Motion"],
-      "linkedin": "https://linkedin.com/in/jameswilson",
-      "github": "https://github.com/jameswilson"
-    },
-    {
-      "name": "Maria Garcia",
-      "role": "UX Designer",
-      "bio": "User experience designer focused on creating meaningful and accessible digital experiences.",
-      "imageUrl": "/members/maria-garcia.jpg",
-      "skills": ["User Research", "Wireframing", "Prototyping", "Accessibility"],
-      "linkedin": "https://linkedin.com/in/mariagarcia",
-      "dribbble": "https://dribbble.com/mariagarcia"
-    },
-    {
-      "name": "Jihad Hasan",
-      "role": "Digital Marketing Manager",
-      "bio": "Expert in paid advertising, conversion optimization, and marketing automation.",
-      "imageUrl": "/members/robert-taylor.jpg",
-      "skills": ["Google Ads", "Facebook Ads", "Marketing Automation", "CRO"],
-      "linkedin": "https://linkedin.com/in/roberttaylor",
-      "twitter": "https://twitter.com/roberttaylor"
+      "bio": "Skilled Frontend Developer with expertise in React and Next.js, dedicated to creating responsive and user-friendly web applications.",
+      "imageUrl": "/members/adnan.jpg",
+      "skills": ["React", "Next.js", "JavaScript", "CSS"],
+      "linkedin": "https://www.linkedin.com/in/md-rakibul-islam-9b7245234/",
+      "github": "https://github.com/rakibulislam12"
     }
   ],
   "departments": [
@@ -158,4 +120,3 @@
     }
   ]
 }
-
