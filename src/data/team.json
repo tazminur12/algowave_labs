@@ -11,7 +11,7 @@
         "Full Stack Development",
         "MERN Stack"
       ],
-      "linkedin": "www.linkedin.com/in/tazminur-rahman-tanim-305315336",
+      "linkedin": "https://www.linkedin.com/in/tazminur-rahman-tanim-305315336",
       "github": "https://github.com/tazminur12"
     },
     {
@@ -33,7 +33,12 @@
       "role": "Full Stack Developer & Shopify Specialist",
       "bio": "Full-stack developer building clean, scalable apps with React, Next.js, Node.js & MongoDB. Specializes in Shopify and AI integrations for dynamic web experiences.",
       "imageUrl": "/members/naeem-haider1.png",
-      "skills": ["React/Next.js", "Shopify", "TypeScript", "AI Integration"],
+      "skills": [
+        "React/Next.js",
+        "Shopify",
+        "TypeScript",
+        "AI Integration"
+      ],
       "linkedin": "https://www.linkedin.com/in/md-naeem-haider/",
       "github": "#"
     },
@@ -42,7 +47,12 @@
       "role": "Full Stack Developer",
       "bio": "Passionate full-stack developer experienced in building modern web applications. Skilled in both frontend and backend technologies to deliver complete solutions.",
       "imageUrl": "/members/mymain.png",
-      "skills": ["MERN Stack", "Next.js", "Redux", "PostgreSQL"],
+      "skills": [
+        "MERN Stack",
+        "Next.js",
+        "Redux",
+        "PostgreSQL"
+      ],
       "linkedin": "https://www.linkedin.com/in/mdjabedhossain12/",
       "github": "https://github.com/Jabedhossain101"
     },
@@ -54,7 +64,7 @@
       "skills": [
         "UI/UX Design",
         "Branding",
-        "Motion Graphics,",
+        "Motion Graphics",
         "React",
         "Next.js"
       ],
@@ -62,13 +72,72 @@
       "github": "https://dribbble.com/michaelrodriguez"
     },
     {
-      "name": "Adnan wasti",
+      "name": "Adnan Wasti",
       "role": "Frontend Developer",
       "bio": "Skilled Frontend Developer with expertise in React and Next.js, dedicated to creating responsive and user-friendly web applications.",
       "imageUrl": "/members/adnan.jpg",
-      "skills": ["React", "Next.js", "JavaScript", "CSS"],
+      "skills": [
+        "React",
+        "Next.js",
+        "JavaScript",
+        "CSS"
+      ],
       "linkedin": "https://www.linkedin.com/in/md-rakibul-islam-9b7245234/",
       "github": "https://github.com/rakibulislam12"
+    },
+    {
+      "name": "Shohan Hossain Alfaz",
+      "role": "Marketing Strategist",
+      "bio": "Data-driven marketer with expertise in SEO, content strategy, and digital campaigns.",
+      "imageUrl": "/members/sohan.jpeg",
+      "skills": [
+        "SEO",
+        "Content Marketing",
+        "Analytics"
+      ],
+      "linkedin": "https://linkedin.com/in/emilywatson",
+      "twitter": "https://twitter.com/emilywatson"
+    },
+    {
+      "name": "Shoisob Saha",
+      "role": "WordPress Developer",
+      "bio": "Expert WordPress developer specializing in custom theme development, plugin customization, and high-performance WooCommerce stores.",
+      "imageUrl": "/members/shaisab.jpeg",
+      "skills": [
+        "WordPress",
+        "PHP",
+        "Elementor",
+        "WooCommerce"
+      ],
+      "linkedin": "#",
+      "github": "#"
+    },
+    {
+      "name": "Mahid Khalifa",
+      "role": "Video Editor",
+      "bio": "Creative video editor bringing stories to life through compelling visual narratives.",
+      "imageUrl": "/members/avatar.png",
+      "skills": [
+        "Video Editing",
+        "Motion Graphics",
+        "Animation"
+      ],
+      "linkedin": "https://linkedin.com/in/lisaanderson",
+      "vimeo": "https://vimeo.com/lisaanderson"
+    },
+    {
+      "name": "Jihad Hasan",
+      "role": "Digital Marketing Manager",
+      "bio": "Expert in paid advertising, conversion optimization, and marketing automation.",
+      "imageUrl": "/members/jihad.jpeg",
+      "skills": [
+        "Google Ads",
+        "Facebook Ads",
+        "Marketing Automation",
+        "CRO"
+      ],
+      "linkedin": "https://linkedin.com/in/roberttaylor",
+      "twitter": "https://twitter.com/roberttaylor"
     }
   ],
   "departments": [
