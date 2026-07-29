@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --background-secondary: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --accent-blue: #2563eb;
+  --accent-violet: #7c3aed;
+  --border-light: #e2e8f0;
+  --success: #10b981;
+  --footer-bg: #0f172a;
+  --footer-text: #f1f5f9;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-accent-blue: var(--accent-blue);
+  --color-accent-violet: var(--accent-violet);
+  --color-border-light: var(--border-light);
+  --color-success: var(--success);
+  --color-footer-bg: var(--footer-bg);
+  --color-footer-text: var(--footer-text);
+
+  --font-heading: var(--font-space-grotesk);
+  --font-body: var(--font-inter);
+}
+
+body {
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  letter-spacing: -0.025em;
+}
+
+/* Brand gradient — use as background */
+.gradient-brand {
+  background-image: linear-gradient(90deg, #2563eb, #7c3aed);
+}
+
+/* Brand gradient — use as text fill */
+.gradient-brand-text {
+  background-image: linear-gradient(90deg, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
