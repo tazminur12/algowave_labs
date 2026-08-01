@@ -48,7 +48,7 @@ export const projects: Project[] = [
     title: "Pristine Home & Commercial Cleaning",
     category: "web",
     image:
-      "/Portfolio/phacc.webp",
+      "/portfolio/phacc.webp",
     description:
       "A conversion-focused marketing website for a Sydney cleaning company specialising in bond and end of lease cleaning.",
     overview:
@@ -82,7 +82,7 @@ export const projects: Project[] = [
     id: "bin-rashid-group-erp",
     title: "BIN Rashid Group – Smart ERP",
     category: "erp",
-    image: "/Portfolio/erp.webp",
+    image: "/portfolio/erp.webp",
     description:
       "An enterprise ERP platform for BIN Rashid Group—unified operations, finance, HR, and supply chain with AI-driven insights.",
     overview:
@@ -113,7 +113,7 @@ export const projects: Project[] = [
     title: "IELTS Practice Pro",
     category: "saas",
     image:
-      "/Portfolio/IELTS.webp",
+      "/portfolio/IELTS.webp",
     description:
       "An AI-powered IELTS prep platform with mock tests, speaking evaluation, band scoring, and student/admin dashboards.",
     overview:
@@ -149,7 +149,7 @@ export const projects: Project[] = [
     title: "Well Health Trade International",
     category: "ecommerce",
     image:
-      "/Portfolio/wellhealthtradeinternational.com.webp",
+      "/portfolio/wellhealthtradeinternational.com.webp",
     description:
       "An e-commerce website for a Bangladesh health brand offering science-backed supplements and nature-minded care.",
     overview:
@@ -174,7 +174,7 @@ export const projects: Project[] = [
     title: "Shilpalay – Fashion & Lifestyle",
     category: "ecommerce",
     image:
-      "/Portfolio/shilpalay.com.webp",
+      "/portfolio/shilpalay.com.webp",
     description:
       "A full-featured fashion & lifestyle e-commerce platform with storefront, checkout, and a powerful admin dashboard.",
     overview:
@@ -207,7 +207,7 @@ export const projects: Project[] = [
     title: "Looklify – Beauty & Skincare",
     category: "ecommerce",
     image:
-      "/Portfolio/looklifybd.com.webp",
+      "/portfolio/looklifybd.com.webp",
     description:
       "A modern beauty & skincare e-commerce website—fast, responsive, and SEO-optimized for Looklify BD.",
     overview:
@@ -233,7 +233,7 @@ export const projects: Project[] = [
     title: "CareerOstad – AI Job Matching",
     category: "saas",
     image:
-      "/Portfolio/career-ostad.webp",
+      "/portfolio/career-ostad.webp",
     description:
       "An AI-powered career platform with job matching, interview prep, LMS, messaging, and role-based dashboards.",
     overview:
@@ -268,7 +268,7 @@ export const projects: Project[] = [
     title: "Salma Air Travels",
     category: "web",
     image:
-      "/Portfolio/salmaair.webp",
+      "/portfolio/salmaair.webp",
     description:
       "A trusted travel agency website for Hajj, Umrah, and international travel—government-approved and IATA-accredited.",
     overview:
@@ -293,7 +293,7 @@ export const projects: Project[] = [
     title: "Tazminur Rahman Tanim — Portfolio",
     category: "portfolio",
     image:
-      "/Portfolio/tazminur.webp",
+      "/portfolio/tazminur.webp",
     description:
       "A modern full-stack personal portfolio with a public site and secure admin dashboard for dynamic content.",
     overview:
@@ -327,7 +327,7 @@ export const projects: Project[] = [
     title: "Bogura Bashi Website",
     category: "web",
     image:
-      "/Portfolio/bogurabashi.webp",
+      "/portfolio/bogurabashi.webp",
     description:
       "A community platform for Bogura—emergency contacts, healthcare, transport, businesses, news, and admin CMS.",
     overview:
@@ -361,7 +361,7 @@ export const projects: Project[] = [
     title: "Blood Donation Management System",
     category: "saas",
     image:
-      "/Portfolio/blood.webp",
+      "/portfolio/blood.webp",
     description:
       "A full-stack blood donation platform for donors, volunteers, and admins with matching, inventory, and certificates.",
     overview:
@@ -394,7 +394,7 @@ export const projects: Project[] = [
     title: "Ness-Wear",
     category: "ecommerce",
     image:
-      "/Portfolio/nesswear.webp",
+      "/portfolio/nesswear.webp",
     description:
       "A modern fashion e-commerce frontend with product browsing, detail galleries, and an admin dashboard scaffold.",
     overview:

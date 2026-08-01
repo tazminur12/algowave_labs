@@ -17,7 +17,7 @@ export const services: Service[] = [
     slug: "web-development",
     title: "Web Development",
     icon: "Code2",
-    image: "/Services/web-development.webp",
+    image: "/services/web-development.webp",
     shortDesc:
       "Fast, responsive websites and web apps built to convert visitors into customers.",
     fullDesc:
@@ -67,7 +67,7 @@ export const services: Service[] = [
     slug: "erp-systems",
     title: "ERP Systems",
     icon: "Building2",
-    image: "/Services/erp-solution.webp",
+    image: "/services/erp-solution.webp",
     shortDesc:
       "Centralized business systems that streamline operations, inventory, and reporting.",
     fullDesc:
@@ -117,7 +117,7 @@ export const services: Service[] = [
     slug: "saas-platforms",
     title: "SaaS Platforms",
     icon: "Cloud",
-    image: "/Services/erp-solution.webp",
+    image: "/services/erp-solution.webp",
     shortDesc:
       "Multi-tenant SaaS products with billing, auth, and scalable cloud infrastructure.",
     fullDesc:
@@ -167,7 +167,7 @@ export const services: Service[] = [
     slug: "ecommerce-solutions",
     title: "E-commerce Solutions",
     icon: "ShoppingCart",
-    image: "/Services/e-commerce.webp",
+    image: "/services/e-commerce.webp",
     shortDesc:
       "Conversion-focused online stores with secure checkout and inventory management.",
     fullDesc:
@@ -217,7 +217,7 @@ export const services: Service[] = [
     slug: "professional-portfolios",
     title: "Professional Portfolios",
     icon: "Briefcase",
-    image: "/Services/portfolio.webp",
+    image: "/services/portfolio.webp",
     shortDesc:
       "Polished personal and brand portfolios that showcase your work with clarity.",
     fullDesc:
