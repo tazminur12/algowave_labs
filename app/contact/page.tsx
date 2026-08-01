@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 
-import { Footer } from "@/components/layout/Footer";
-import { Navbar } from "@/components/layout/Navbar";
 import { ContactForm } from "@/components/sections/ContactForm";
 import { ContactInfo } from "@/components/sections/ContactInfo";
-import { GradientText } from "@/components/ui/GradientText";
+import {
+  PageHeader,
+  PageHeaderAccent,
+} from "@/components/ui/PageHeader";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -25,32 +27,30 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <Navbar />
-      <main className="flex-1">
-        <section className="bg-background-secondary py-20 md:py-28">
-          <div className="mx-auto max-w-5xl px-6 text-center">
-            <p className="text-sm font-bold uppercase tracking-[0.2em] text-accent-blue">
-              Contact
-            </p>
-            <h1 className="font-heading mt-5 text-4xl font-bold tracking-tight text-text-primary md:text-5xl lg:text-6xl">
-              Let&apos;s Build Something{" "}
-              <GradientText>Great</GradientText>
-            </h1>
-            <p className="mx-auto mt-6 max-w-3xl text-base leading-7 text-text-secondary md:text-lg md:leading-8">
-              Share your goals, timeline, and challenges. We will help you
-              shape a clear next step toward a scalable digital solution.
-            </p>
-          </div>
-        </section>
+      <PageHeader
+        tone="contact"
+        eyebrow="Contact"
+        title={
+          <>
+            Let&apos;s Build Something{" "}
+            <PageHeaderAccent tone="contact">Great</PageHeaderAccent>
+          </>
+        }
+        description="Share your goals, timeline, and challenges. We will help you shape a clear next step toward a scalable digital solution."
+      />
 
-        <section className="bg-white py-20 md:py-28">
-          <div className="mx-auto grid max-w-7xl gap-8 px-6 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10">
+      <section className="bg-white py-20 md:py-28">
+        <div className="mx-auto grid max-w-7xl gap-8 px-6 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10">
+          <Suspense
+            fallback={
+              <div className="min-h-96 rounded-xl border border-border-light bg-white" />
+            }
+          >
             <ContactForm />
-            <ContactInfo />
-          </div>
-        </section>
-      </main>
-      <Footer />
+          </Suspense>
+          <ContactInfo />
+        </div>
+      </section>
     </>
   );
 }

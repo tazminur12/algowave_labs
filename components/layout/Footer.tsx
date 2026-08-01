@@ -5,10 +5,11 @@ import {
   MapPin,
   MessageCircle,
   Phone,
-  Scale,
   type LucideIcon,
 } from "lucide-react";
 import Link from "next/link";
+
+import { services } from "@/lib/data/services";
 
 const quickLinks = [
   { label: "Home", href: "/" },
@@ -19,14 +20,6 @@ const quickLinks = [
   { label: "Contact", href: "/contact" },
 ] as const;
 
-const services = [
-  "Web Development",
-  "ERP Systems",
-  "SaaS Platforms",
-  "E-commerce",
-  "Portfolios",
-] as const;
-
 type SocialLink = {
   label: string;
   href: string;
@@ -34,9 +27,16 @@ type SocialLink = {
 };
 
 const socialLinks: SocialLink[] = [
-  { label: "Facebook", href: "#", icon: MessageCircle },
-  { label: "LinkedIn", href: "#", icon: BriefcaseBusiness },
-  { label: "Golegal", href: "#", icon: Scale },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/profile.php?id=61585001855004",
+    icon: MessageCircle,
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/algowave-labs/",
+    icon: BriefcaseBusiness,
+  },
 ];
 
 const linkStyles =
@@ -84,14 +84,9 @@ export function Footer() {
             </h2>
             <ul className="mt-3">
               {services.map((service) => (
-                <li key={service}>
-                  <Link
-                    className={linkStyles}
-                    href={`/services#${service
-                      .toLowerCase()
-                      .replaceAll(" ", "-")}`}
-                  >
-                    {service}
+                <li key={service.slug}>
+                  <Link className={linkStyles} href={`/services/${service.slug}`}>
+                    {service.title}
                   </Link>
                 </li>
               ))}
@@ -137,6 +132,8 @@ export function Footer() {
                 <a
                   key={label}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={label}
                   title={label}
                   className="inline-flex size-11 items-center justify-center rounded-full border border-white/15 bg-white/5 text-footer-text transition-all hover:-translate-y-0.5 hover:border-accent-blue hover:bg-accent-blue hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue focus-visible:ring-offset-2 focus-visible:ring-offset-footer-bg"

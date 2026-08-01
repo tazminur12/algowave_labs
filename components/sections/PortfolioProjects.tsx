@@ -1,15 +1,11 @@
 "use client";
 
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
 import { useMemo, useState } from "react";
 
-import { Badge } from "@/components/ui/Badge";
-import { Button } from "@/components/ui/Button";
-import { Card } from "@/components/ui/Card";
+import { PortfolioCard } from "@/components/ui/PortfolioCard";
 import {
+  categoryLabels,
   projects,
   type ProjectCategory,
 } from "@/lib/data/portfolio";
@@ -26,14 +22,6 @@ const filters: Array<{ label: string; value: FilterValue }> = [
   { label: "Portfolio Sites", value: "portfolio" },
 ];
 
-const categoryLabels: Record<ProjectCategory, string> = {
-  web: "Web Development",
-  erp: "ERP",
-  saas: "SaaS",
-  ecommerce: "E-commerce",
-  portfolio: "Portfolio Sites",
-};
-
 export function PortfolioProjects() {
   const [activeFilter, setActiveFilter] = useState<FilterValue>("all");
 
@@ -46,8 +34,17 @@ export function PortfolioProjects() {
   );
 
   return (
-    <section className="bg-white py-20 md:py-28">
-      <div className="mx-auto max-w-7xl px-6">
+    <section className="relative overflow-hidden bg-linear-to-b from-white via-slate-50/80 to-white py-20 md:py-28">
+      <div
+        aria-hidden="true"
+        className="gradient-brand absolute -top-40 right-0 size-96 rounded-full opacity-10 blur-3xl"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute -bottom-32 left-0 size-80 rounded-full bg-accent-violet/10 blur-3xl"
+      />
+
+      <div className="relative mx-auto max-w-7xl px-6">
         <div
           className="flex flex-wrap items-center justify-center gap-2 sm:gap-3"
           role="tablist"
@@ -55,6 +52,12 @@ export function PortfolioProjects() {
         >
           {filters.map((filter) => {
             const isActive = activeFilter === filter.value;
+            const count =
+              filter.value === "all"
+                ? projects.length
+                : projects.filter((p) => p.category === filter.value).length;
+
+            if (filter.value !== "all" && count === 0) return null;
 
             return (
               <button
@@ -64,13 +67,21 @@ export function PortfolioProjects() {
                 aria-selected={isActive}
                 onClick={() => setActiveFilter(filter.value)}
                 className={cn(
-                  "inline-flex min-h-11 items-center rounded-full border px-4 py-2 text-sm font-semibold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue focus-visible:ring-offset-2 sm:px-5",
+                  "inline-flex min-h-11 items-center gap-2 rounded-full border px-4 py-2 text-sm font-semibold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue focus-visible:ring-offset-2 sm:px-5",
                   isActive
-                    ? "gradient-brand border-transparent text-white shadow-sm"
-                    : "border-border-light bg-white text-text-secondary hover:border-accent-blue hover:text-accent-blue",
+                    ? "gradient-brand border-transparent text-white shadow-[0_12px_30px_-12px_rgba(37,99,235,0.7)]"
+                    : "border-border-light bg-white/80 text-text-secondary backdrop-blur-sm hover:border-accent-blue hover:text-accent-blue",
                 )}
               >
                 {filter.label}
+                <span
+                  className={cn(
+                    "rounded-full px-1.5 py-0.5 text-[10px] font-bold",
+                    isActive ? "bg-white/20 text-white" : "bg-slate-100 text-text-secondary",
+                  )}
+                >
+                  {count}
+                </span>
               </button>
             );
           })}
@@ -82,61 +93,16 @@ export function PortfolioProjects() {
             className="mt-12 grid gap-6 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3"
           >
             <AnimatePresence mode="popLayout">
-              {filteredProjects.map((project) => (
+              {filteredProjects.map((project, index) => (
                 <motion.div
                   key={project.id}
                   layout
-                  id={project.id}
-                  initial={{ opacity: 0, scale: 0.96 }}
-                  animate={{ opacity: 1, scale: 1 }}
+                  initial={{ opacity: 0, y: 18 }}
+                  animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.96 }}
-                  transition={{ duration: 0.28, ease: "easeOut" }}
-                  className="scroll-mt-19"
+                  transition={{ duration: 0.32, ease: "easeOut" }}
                 >
-                  <Card className="group h-full overflow-hidden p-0 transition-all duration-300 hover:-translate-y-1">
-                    <div className="relative aspect-video overflow-hidden bg-slate-200">
-                      <Image
-                        src={project.image}
-                        alt={`${project.title} preview`}
-                        fill
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        loading="lazy"
-                      />
-
-                      <Badge
-                        variant="neutral"
-                        className="absolute top-4 left-4 z-10 bg-white/90 text-text-primary shadow-sm backdrop-blur-sm"
-                      >
-                        {categoryLabels[project.category]}
-                      </Badge>
-
-                      <div className="absolute inset-0 z-10 flex items-center justify-center bg-accent-blue/0 transition-colors duration-300 group-hover:bg-accent-blue/15">
-                        <Button
-                          asChild
-                          variant="primary"
-                          className="translate-y-2 opacity-100 transition-all duration-300 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100"
-                        >
-                          <Link href={`#${project.id}`}>
-                            View Project
-                            <ArrowRight
-                              aria-hidden="true"
-                              className="size-4"
-                            />
-                          </Link>
-                        </Button>
-                      </div>
-                    </div>
-
-                    <div className="p-6">
-                      <h2 className="font-heading text-xl font-bold text-text-primary md:text-2xl">
-                        {project.title}
-                      </h2>
-                      <p className="mt-3 line-clamp-3 text-sm leading-6 text-text-secondary sm:text-base sm:leading-7">
-                        {project.description}
-                      </p>
-                    </div>
-                  </Card>
+                  <PortfolioCard project={project} index={index} />
                 </motion.div>
               ))}
             </AnimatePresence>
@@ -145,7 +111,8 @@ export function PortfolioProjects() {
 
         {filteredProjects.length === 0 ? (
           <p className="mt-12 text-center text-text-secondary">
-            No projects found in this category yet.
+            No {activeFilter === "all" ? "" : categoryLabels[activeFilter].toLowerCase()}{" "}
+            projects found yet.
           </p>
         ) : null}
       </div>

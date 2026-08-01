@@ -1,33 +1,30 @@
 export type Testimonial = {
   name: string;
   company: string;
+  project: string;
   quote: string;
-  photo: string;
 };
 
 export const testimonials: Testimonial[] = [
   {
-    name: "Sarah Mitchell",
-    company: "Nova Finance",
+    name: "Operations Team",
+    company: "Pristine Home & Commercial Cleaning",
+    project: "Marketing Website",
     quote:
-      "AlgoWave Labs rebuilt our website from the ground up. The new site is faster, clearer, and has already improved our inbound lead quality. Communication was excellent at every stage.",
-    photo:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80",
+      "AlgoWave Labs built a conversion-focused website around our bond cleaning services in Sydney. Quote enquiries are clearer, the SEO landing pages perform well, and the site finally matches the professionalism of our brand.",
   },
   {
-    name: "Daniel Okonkwo",
-    company: "Harbor Logistics",
+    name: "Product Team",
+    company: "IELTS Practice Pro",
+    project: "AI SaaS Platform",
     quote:
-      "Their ERP work transformed how we manage inventory and operations. What used to take hours of spreadsheet work is now handled in one secure platform our team actually enjoys using.",
-    photo:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+      "They delivered a full IELTS prep platform with mock tests, AI speaking evaluation, and subscription billing. The architecture is solid, the speaking module feels exam-ready, and we launched with confidence.",
   },
   {
-    name: "Priya Shah",
-    company: "PulseBoard",
+    name: "Founder",
+    company: "Looklify BD",
+    project: "E-commerce Store",
     quote:
-      "We needed a reliable partner to ship our SaaS MVP quickly without cutting corners. AlgoWave Labs delivered a clean architecture, polished UI, and a product we were proud to launch.",
-    photo:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+      "Our beauty and skincare storefront is fast, mobile-friendly, and easy to manage. AlgoWave Labs understood the brand and turned it into a clean shopping experience our customers actually enjoy using.",
   },
 ];

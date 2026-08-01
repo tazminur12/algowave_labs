@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 
-import { Footer } from "@/components/layout/Footer";
-import { Navbar } from "@/components/layout/Navbar";
 import { ClientLogos } from "@/components/sections/ClientLogos";
 import { CTABanner } from "@/components/sections/CTABanner";
 import { FeaturedPortfolio } from "@/components/sections/FeaturedPortfolio";
@@ -33,19 +31,15 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <main className="flex-1">
-        <Hero />
-        <ClientLogos />
-        <ServicesGrid />
-        <TechStack />
-        <WhyChooseUs />
-        <ProcessTimeline />
-        <FeaturedPortfolio />
-        <Testimonials />
-        <CTABanner />
-      </main>
-      <Footer />
+      <Hero />
+      <ClientLogos />
+      <ServicesGrid />
+      <TechStack />
+      <WhyChooseUs />
+      <ProcessTimeline />
+      <FeaturedPortfolio />
+      <Testimonials />
+      <CTABanner />
     </>
   );
 }

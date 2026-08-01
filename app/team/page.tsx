@@ -6,12 +6,13 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 
-import { Footer } from "@/components/layout/Footer";
-import { Navbar } from "@/components/layout/Navbar";
 import { CTABanner } from "@/components/sections/CTABanner";
 import { TeamSection } from "@/components/sections/TeamSection";
 import { Card } from "@/components/ui/Card";
-import { GradientText } from "@/components/ui/GradientText";
+import {
+  PageHeader,
+  PageHeaderAccent,
+} from "@/components/ui/PageHeader";
 
 export const metadata: Metadata = {
   title: "Our Team",
@@ -59,23 +60,17 @@ const culturePoints: CulturePoint[] = [
 export default function TeamPage() {
   return (
     <>
-      <Navbar />
-      <main className="flex-1">
-        <section className="bg-background-secondary py-20 md:py-28">
-          <div className="mx-auto max-w-5xl px-6 text-center">
-            <p className="text-sm font-bold uppercase tracking-[0.2em] text-accent-blue">
-              Our Team
-            </p>
-            <h1 className="font-heading mt-5 text-4xl font-bold tracking-tight text-text-primary md:text-5xl lg:text-6xl">
-              The People Behind{" "}
-              <GradientText>AlgoWave Labs</GradientText>
-            </h1>
-            <p className="mx-auto mt-6 max-w-3xl text-base leading-7 text-text-secondary md:text-lg md:leading-8">
-              A dedicated team of developers, designers, and strategists
-              building scalable digital solutions for ambitious businesses.
-            </p>
-          </div>
-        </section>
+      <PageHeader
+        tone="team"
+        eyebrow="Our Team"
+        title={
+          <>
+            The People Behind{" "}
+            <PageHeaderAccent tone="team">AlgoWave Labs</PageHeaderAccent>
+          </>
+        }
+        description="A dedicated team of developers, designers, and strategists building scalable digital solutions for ambitious businesses."
+      />
 
         <TeamSection />
 
@@ -126,8 +121,6 @@ export default function TeamPage() {
           subtext="Tell us about your project and we'll bring the right mix of strategy, design, and engineering to help you move forward."
           buttonLabel="Start a Conversation"
         />
-      </main>
-      <Footer />
     </>
   );
 }

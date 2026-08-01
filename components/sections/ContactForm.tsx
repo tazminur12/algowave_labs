@@ -1,7 +1,8 @@
 "use client";
 
 import { CheckCircle2, LoaderCircle } from "lucide-react";
-import { useState, type FormEvent } from "react";
+import { useSearchParams } from "next/navigation";
+import { useEffect, useState, type FormEvent } from "react";
 
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
@@ -16,6 +17,7 @@ type FormState = {
   phone: string;
   service: string;
   message: string;
+  website: string;
 };
 
 const initialState: FormState = {
@@ -24,15 +26,41 @@ const initialState: FormState = {
   phone: "",
   service: "",
   message: "",
+  website: "",
 };
 
 const fieldClasses =
   "mt-2 w-full rounded-xl border border-border-light bg-white px-4 py-3 text-sm text-text-primary outline-none transition focus:border-accent-blue focus:ring-2 focus:ring-accent-blue/20 disabled:cursor-not-allowed disabled:opacity-60 sm:text-base";
 
+function resolveServiceParam(value: string | null) {
+  if (!value) return "";
+  if (value.toLowerCase() === "other / not sure") {
+    return "Other / Not sure";
+  }
+  const match = services.find(
+    (service) =>
+      service.title.toLowerCase() === value.toLowerCase() ||
+      service.slug === value.toLowerCase(),
+  );
+  return match?.title ?? "";
+}
+
 export function ContactForm() {
-  const [form, setForm] = useState<FormState>(initialState);
+  const searchParams = useSearchParams();
+  const serviceFromUrl = resolveServiceParam(searchParams.get("service"));
+  const [form, setForm] = useState<FormState>({
+    ...initialState,
+    service: serviceFromUrl,
+  });
   const [status, setStatus] = useState<FormStatus>("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const [startedAt] = useState(() => Date.now());
+
+  useEffect(() => {
+    if (serviceFromUrl) {
+      setForm((prev) => ({ ...prev, service: serviceFromUrl }));
+    }
+  }, [serviceFromUrl]);
 
   const updateField = (field: keyof FormState, value: string) => {
     setForm((prev) => ({ ...prev, [field]: value }));
@@ -44,23 +72,17 @@ export function ContactForm() {
     setErrorMessage("");
 
     try {
-      // Replace YOUR_ACCESS_KEY with your key from https://web3forms.com
-      // Prefer NEXT_PUBLIC_WEB3FORMS_KEY in production environments.
-      const accessKey =
-        process.env.NEXT_PUBLIC_WEB3FORMS_KEY ?? "YOUR_ACCESS_KEY";
-
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          access_key: accessKey,
           name: form.name,
           email: form.email,
           phone: form.phone,
           service: form.service,
           message: form.message,
-          subject: `New inquiry from ${form.name}`,
-          from_name: "AlgoWave Labs Website",
+          website: form.website,
+          startedAt,
         }),
       });
 
@@ -76,7 +98,10 @@ export function ContactForm() {
       }
 
       setStatus("success");
-      setForm(initialState);
+      setForm({
+        ...initialState,
+        service: serviceFromUrl,
+      });
     } catch (error) {
       setStatus("error");
       setErrorMessage(
@@ -113,7 +138,7 @@ export function ContactForm() {
   }
 
   return (
-    <Card className="h-full p-7 sm:p-9">
+    <Card className="relative h-full overflow-hidden p-7 sm:p-9">
       <h2 className="font-heading text-2xl font-bold text-text-primary md:text-3xl">
         Send us a message
       </h2>
@@ -122,6 +147,22 @@ export function ContactForm() {
       </p>
 
       <form className="mt-8 space-y-5" onSubmit={handleSubmit} noValidate>
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -left-[9999px] h-0 w-0 overflow-hidden opacity-0"
+        >
+          <label htmlFor="website">Website</label>
+          <input
+            id="website"
+            name="website"
+            type="text"
+            tabIndex={-1}
+            autoComplete="off"
+            value={form.website}
+            onChange={(event) => updateField("website", event.target.value)}
+          />
+        </div>
+
         <div>
           <label
             htmlFor="full-name"

@@ -1,5 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
+
+import { Footer } from "@/components/layout/Footer";
+import { Navbar } from "@/components/layout/Navbar";
 import "./globals.css";
 
 const siteUrl = "https://algowavelabs.com";
@@ -65,21 +68,8 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: [
-      {
-        url: "/Favicon/advertisig-agency.png",
-        type: "image/png",
-        sizes: "512x512",
-      },
-    ],
-    apple: [
-      {
-        url: "/Favicon/advertisig-agency.png",
-        type: "image/png",
-        sizes: "180x180",
-      },
-    ],
-    shortcut: ["/Favicon/advertisig-agency.png"],
+    icon: [{ url: "/Favicon/icon.svg", type: "image/svg+xml" }],
+    apple: [{ url: "/apple-icon", sizes: "180x180", type: "image/png" }],
   },
   manifest: "/manifest.webmanifest",
   openGraph: {
@@ -91,10 +81,10 @@ export const metadata: Metadata = {
     description: siteDescription,
     images: [
       {
-        url: "/Favicon/advertisig-agency.png",
-        width: 512,
-        height: 512,
-        alt: "AlgoWave Labs — Turning Ideas into Scalable Digital Solutions",
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "AlgoWave Labs — Scalable Digital Solutions",
       },
     ],
   },
@@ -102,7 +92,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteTitle,
     description: siteDescription,
-    images: ["/Favicon/advertisig-agency.png"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -118,9 +108,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    // Add your verification tokens when available:
-    // google: "your-google-site-verification-token",
-    // yandex: "your-yandex-verification-token",
+    google: process.env.GOOGLE_SITE_VERIFICATION,
   },
 };
 
@@ -130,7 +118,7 @@ const organizationJsonLd = {
   name: siteName,
   legalName: siteName,
   url: siteUrl,
-  logo: `${siteUrl}/Favicon/advertisig-agency.png`,
+  logo: `${siteUrl}/Favicon/icon.svg`,
   description: siteDescription,
   email: "hello@algowavelabs.com",
   telephone: "+8801540288718",
@@ -139,6 +127,10 @@ const organizationJsonLd = {
     addressLocality: "Mohammadpur, Dhaka",
     addressCountry: "BD",
   },
+  sameAs: [
+    "https://www.facebook.com/profile.php?id=61585001855004",
+    "https://www.linkedin.com/company/algowave-labs/",
+  ],
   areaServed: {
     "@type": "Place",
     name: "Worldwide",
@@ -160,7 +152,7 @@ const websiteJsonLd = {
     name: siteName,
     logo: {
       "@type": "ImageObject",
-      url: `${siteUrl}/Favicon/advertisig-agency.png`,
+      url: `${siteUrl}/Favicon/icon.svg`,
     },
   },
 };
@@ -189,8 +181,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-body min-h-full flex flex-col bg-background text-text-primary">
-        {children}
+      <body className="font-body flex min-h-full flex-col bg-background text-text-primary">
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );

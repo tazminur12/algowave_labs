@@ -7,6 +7,7 @@ import {
   MessageCircle,
   type LucideIcon,
 } from "lucide-react";
+import Image from "next/image";
 import type { MouseEvent } from "react";
 
 import { Card } from "@/components/ui/Card";
@@ -23,15 +24,6 @@ const socialIcons: SocialIcon[] = [
   { label: "GitHub", icon: CodeXml },
   { label: "Twitter", icon: MessageCircle },
 ];
-
-function getInitials(name: string) {
-  return name
-    .split(" ")
-    .map((part) => part[0])
-    .join("")
-    .slice(0, 2)
-    .toUpperCase();
-}
 
 export function TeamSection() {
   const reduceMotion = useReducedMotion();
@@ -60,12 +52,15 @@ export function TeamSection() {
               <Card className="group flex h-full flex-col items-center p-6 text-center transition-all duration-300 hover:-translate-y-1 sm:p-7">
                 <div className="gradient-brand rounded-full p-1 shadow-md">
                   <div className="rounded-full bg-white p-1">
-                    <div
-                      className="flex size-24 items-center justify-center rounded-full bg-background-secondary font-heading text-2xl font-bold text-text-primary sm:size-28"
-                      role="img"
-                      aria-label={`${member.name} photo placeholder`}
-                    >
-                      {getInitials(member.name)}
+                    <div className="relative size-24 overflow-hidden rounded-full bg-background-secondary sm:size-28">
+                      <Image
+                        src={member.photo}
+                        alt={`${member.name} — ${member.role}`}
+                        fill
+                        sizes="112px"
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        loading="lazy"
+                      />
                     </div>
                   </div>
                 </div>

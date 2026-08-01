@@ -1,13 +1,14 @@
 import { CheckCircle2, Eye, Layers3, Target, TrendingUp } from "lucide-react";
 import type { Metadata } from "next";
 
-import { Footer } from "@/components/layout/Footer";
-import { Navbar } from "@/components/layout/Navbar";
 import { CoreValues } from "@/components/sections/CoreValues";
 import { CTABanner } from "@/components/sections/CTABanner";
 import { Stats } from "@/components/sections/Stats";
 import { Card } from "@/components/ui/Card";
-import { GradientText } from "@/components/ui/GradientText";
+import {
+  PageHeader,
+  PageHeaderAccent,
+} from "@/components/ui/PageHeader";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -28,24 +29,17 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <Navbar />
-      <main className="flex-1">
-        <section className="bg-background-secondary py-20 md:py-28">
-          <div className="mx-auto max-w-5xl px-6 text-center">
-            <p className="text-sm font-bold uppercase tracking-[0.2em] text-accent-blue">
-              About Us
-            </p>
-            <h1 className="font-heading mt-5 text-4xl font-bold tracking-tight text-text-primary md:text-5xl lg:text-6xl">
-              We Build Digital Solutions That{" "}
-              <GradientText>Scale</GradientText>
-            </h1>
-            <p className="mx-auto mt-6 max-w-3xl text-base leading-7 text-text-secondary md:text-lg md:leading-8">
-              AlgoWave Labs partners with growing businesses to design and
-              build modern software that simplifies work, creates better
-              customer experiences, and supports long-term growth.
-            </p>
-          </div>
-        </section>
+      <PageHeader
+        tone="about"
+        eyebrow="About Us"
+        title={
+          <>
+            We Build Digital Solutions That{" "}
+            <PageHeaderAccent tone="about">Scale</PageHeaderAccent>
+          </>
+        }
+        description="AlgoWave Labs partners with growing businesses to design and build modern software that simplifies work, creates better customer experiences, and supports long-term growth."
+      />
 
         <section className="bg-white py-20 md:py-28">
           <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2 lg:gap-20">
@@ -201,8 +195,6 @@ export default function AboutPage() {
         <Stats />
         <CoreValues />
         <CTABanner />
-      </main>
-      <Footer />
     </>
   );
 }

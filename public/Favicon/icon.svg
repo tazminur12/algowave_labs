@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="awl" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#awl)"/>
+  <path
+    d="M32 14L45.5 50H39.1L36.3 42.2H27.7L24.9 50H18.5L32 14ZM29.9 36.8H34.1L32 30.6L29.9 36.8Z"
+    fill="white"
+  />
+  <path
+    d="M17 52.5C23.5 56.2 28.8 58 32.2 58C35.6 58 40.9 56.2 47 52.5"
+    stroke="white"
+    stroke-width="3.5"
+    stroke-linecap="round"
+    opacity="0.9"
+  />
+</svg>
